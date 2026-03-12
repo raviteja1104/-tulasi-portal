@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tulasi Devotion Portal · Sacred Guidelines for Vishnu Worship</title>
+<style>
+:root {
+  --forest-deep:#06120a;--forest:#0b1e13;--forest-mid:#1a3828;--forest-light:#2d5a40;
+  --sage:#7aaa8a;--sage-light:#aecfba;--sage-pale:#ddeee4;
+  --gold:#b5851e;--gold-mid:#cfa040;--gold-light:#e8c87a;--gold-pale:#f5e9c4;--gold-faint:#fbf5e4;
+  --ivory:#faf7f0;--ivory-2:#f2ede0;--ivory-3:#e4dcc8;
+  --ink:#18170f;--ink-mid:#3a3826;--ink-soft:#6a6650;--ink-faint:#9a9278;
+  --red-deep:#4a1515;--red-pale:#fdf4f4;
+  --blue-deep:#162540;--blue-pale:#f0f4fa;
+  --font-serif:"Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;
+  --font-sans:"Segoe UI",Optima,Candara,sans-serif;
+  --font-deva:"Mangal","Aparajita","Kokila",serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-sans);background:var(--ivory);color:var(--ink);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-track{background:var(--ivory-2)}
+::-webkit-scrollbar-thumb{background:var(--sage)}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(6,18,10,.97);backdrop-filter:blur(24px);display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:60px;border-bottom:1px solid rgba(181,133,30,.12)}
+.nav-logo{font-family:var(--font-serif);font-size:18px;font-weight:400;font-style:italic;color:var(--gold-light);text-decoration:none;letter-spacing:.05em;display:flex;align-items:center;gap:10px}
+.nav-logo-dot{width:6px;height:6px;background:var(--gold-mid);border-radius:50%;display:inline-block}
+.nav-links{display:flex;list-style:none;gap:2px}
+.nav-links a{color:rgba(255,255,255,.38);text-decoration:none;font-size:10px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:6px 14px;transition:color .2s;border-radius:2px}
+.nav-links a:hover{color:var(--gold-light)}
+.nav-today{color:var(--forest)!important;background:var(--gold-mid)!important;padding:6px 16px!important}
+.nav-today:hover{background:var(--gold-light)!important}
+.translate-wrap{display:flex;align-items:center;gap:8px}
+.translate-select{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.45);padding:5px 28px 5px 10px;font-family:var(--font-sans);font-size:10px;letter-spacing:.05em;cursor:pointer;outline:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='4'%3E%3Cpath d='M0 0l4 4 4-4z' fill='%23cfa040'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8px center;min-width:140px;transition:border-color .2s;border-radius:2px}
+.translate-select option{background:#1a3828;color:white}
+.translate-select:focus{border-color:var(--gold-mid)}
+.translate-status{text-align:center;font-size:11px;letter-spacing:.08em;color:var(--ink-soft);background:var(--ivory-2);border-bottom:1px solid var(--ivory-3);padding:5px;display:none}
+.translate-status.show{display:block}
+.translate-spinner{display:inline-block;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ── HERO ── */
+.hero{min-height:100vh;background:radial-gradient(ellipse 55% 65% at 15% 60%,rgba(45,90,64,.6) 0%,transparent 60%),radial-gradient(ellipse 45% 35% at 85% 15%,rgba(181,133,30,.12) 0%,transparent 50%),linear-gradient(150deg,#030a05 0%,#0b1e13 55%,#040b06 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:110px 24px 100px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,rgba(174,207,186,.04) 1px,transparent 1px);background-size:32px 32px}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:120px;background:linear-gradient(to bottom,transparent,var(--ivory));pointer-events:none}
+.hero-kicker{font-family:var(--font-sans);font-size:9.5px;font-weight:600;letter-spacing:.5em;text-transform:uppercase;color:rgba(174,207,186,.4);margin-bottom:40px}
+.hero-ornament{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:28px;opacity:.3}
+.hero-ornament span{width:48px;height:1px;background:var(--gold)}
+.hero-ornament em{font-family:var(--font-serif);font-size:14px;color:var(--gold);font-style:normal}
+.hero h1{font-family:var(--font-serif);font-size:clamp(52px,8vw,104px);font-weight:300;color:var(--ivory);line-height:.92;letter-spacing:-.01em;margin-bottom:10px}
+.hero h1 em{font-style:italic;color:var(--gold-mid)}
+.hero-sub{font-family:var(--font-sans);font-size:9.5px;font-weight:400;letter-spacing:.42em;text-transform:uppercase;color:rgba(174,207,186,.32);margin-bottom:60px}
+.hero-cta{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(181,133,30,.4);color:var(--gold-mid);background:transparent;padding:14px 40px;font-family:var(--font-sans);font-size:10px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;cursor:pointer;transition:all .3s;position:relative;z-index:1}
+.hero-cta:hover{background:var(--gold-mid);color:var(--forest);border-color:var(--gold-mid)}
+.hero-cta-arrow{font-size:12px;transition:transform .3s}
+.hero-cta:hover .hero-cta-arrow{transform:translateX(4px)}
+.scroll-cue{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);font-size:9px;letter-spacing:.36em;text-transform:uppercase;color:rgba(255,255,255,.15);font-family:var(--font-sans);animation:breathe 2.8s ease-in-out infinite;z-index:1}
+@keyframes breathe{0%,100%{opacity:.15}50%{opacity:.6}}
+
+/* ── LAYOUT ── */
+.container{max-width:1020px;margin:0 auto;padding:0 32px 120px}
+
+/* ── SECTION HEADERS ── */
+.section-head{text-align:center;padding:96px 0 52px}
+.sec-kicker{display:block;font-family:var(--font-sans);font-size:9px;font-weight:600;letter-spacing:.42em;text-transform:uppercase;color:var(--sage);margin-bottom:16px}
+.sec-title{font-family:var(--font-serif);font-size:clamp(32px,5vw,52px);font-weight:300;color:var(--forest);line-height:1.08;margin-bottom:24px;letter-spacing:.01em}
+.sec-ornament{display:flex;align-items:center;justify-content:center;gap:12px;opacity:.4}
+.sec-ornament span{width:36px;height:1px;background:var(--gold);display:block}
+.sec-ornament em{font-family:var(--font-serif);font-size:11px;color:var(--gold);font-style:normal}
+
+/* ── PANCHANG CHECKER ── */
+.checker-card{background:var(--forest);overflow:hidden;border:1px solid rgba(255,255,255,.04);box-shadow:0 24px 80px rgba(0,0,0,.18)}
+.checker-inner{display:grid;grid-template-columns:1fr 1.1fr}
+.ck-left{padding:52px 48px;border-right:1px solid rgba(255,255,255,.05)}
+.ck-left h3{font-family:var(--font-serif);font-size:26px;font-weight:300;font-style:italic;color:var(--ivory);margin-bottom:8px}
+.ck-left p{font-size:11.5px;font-weight:300;color:rgba(255,255,255,.28);margin-bottom:30px;line-height:1.85;letter-spacing:.03em}
+#todayResult{border:1px solid rgba(255,255,255,.06);padding:22px 26px;min-height:120px;transition:all .4s ease}
+.result-safe{border-color:rgba(122,170,138,.35)!important;background:rgba(122,170,138,.06)!important}
+.result-unsafe{border-color:rgba(180,60,60,.28)!important;background:rgba(180,60,60,.05)!important}
+.result-big{font-family:var(--font-serif);font-size:28px;font-weight:400;margin-bottom:10px;line-height:1.1}
+.result-safe .result-big{color:var(--sage-light)}
+.result-unsafe .result-big{color:#c07878}
+.result-detail{font-size:11.5px;font-weight:300;color:rgba(255,255,255,.42);line-height:1.8;letter-spacing:.02em}
+.rtag{display:inline-block;background:rgba(180,60,60,.1);color:#c07878;border:1px solid rgba(180,60,60,.18);padding:2px 10px;font-size:10px;letter-spacing:.05em;margin:2px 2px 2px 0;border-radius:2px}
+
+.ck-right{padding:52px 44px}
+.p-section-label{display:block;font-size:8.5px;font-weight:600;letter-spacing:.36em;text-transform:uppercase;color:var(--sage);margin-bottom:20px}
+.panchang-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.05)}
+.panchang-item{background:rgba(255,255,255,.02);padding:16px 18px;transition:background .2s}
+.panchang-item:hover{background:rgba(255,255,255,.04)}
+.p-lbl{display:block;font-size:8px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--sage);margin-bottom:6px}
+.p-val{font-family:var(--font-serif);font-size:17px;font-weight:400;color:var(--ivory);line-height:1.2}
+.p-sub{font-size:10px;color:rgba(255,255,255,.24);margin-top:3px;letter-spacing:.03em}
+
+/* ── QUICK REF ── */
+.quick-ref{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--ivory-3);background:var(--ivory-3);overflow:hidden;margin-bottom:2px}
+.qr-cell{background:var(--forest-mid);text-align:center;padding:30px 20px;border-right:1px solid rgba(255,255,255,.05)}
+.qr-cell:last-child{border-right:none}
+.qr-kicker{display:block;font-size:8px;font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:var(--sage);margin-bottom:10px}
+.qr-value{font-family:var(--font-serif);font-size:15px;font-weight:300;color:var(--ivory);line-height:1.6}
+
+/* ── CARDS ── */
+.card{background:white;border:1px solid var(--ivory-3);overflow:hidden;transition:transform .25s,box-shadow .25s;box-shadow:0 1px 4px rgba(8,24,15,.04)}
+.card:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(8,24,15,.08)}
+.card-stripe{height:3px}
+.stripe-red{background:linear-gradient(90deg,#6b1f1f,#a03030)}
+.stripe-blue{background:linear-gradient(90deg,var(--blue-deep),#2e5080)}
+.stripe-gold{background:linear-gradient(90deg,var(--gold),var(--gold-mid))}
+.stripe-sage{background:linear-gradient(90deg,var(--forest-mid),var(--sage))}
+.card-body{padding:30px 34px}
+.card-kicker{display:block;font-size:8.5px;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:var(--sage);margin-bottom:8px}
+.card-title{font-family:var(--font-serif);font-size:22px;font-weight:400;color:var(--forest);margin-bottom:20px;line-height:1.2}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{padding:5px 14px;font-size:11.5px;font-weight:400;letter-spacing:.03em;border-radius:2px}
+.t-red{background:var(--red-pale);color:var(--red-deep);border:1px solid rgba(74,21,21,.1)}
+.t-blue{background:var(--blue-pale);color:var(--blue-deep);border:1px solid rgba(22,37,64,.1)}
+.card-note{font-size:11.5px;color:var(--ink-faint);margin-top:16px;line-height:1.7;font-style:italic;letter-spacing:.02em}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-bottom:2px}
+
+/* ── TIME SLOTS ── */
+.tgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tslot{background:var(--red-pale);border:1px solid rgba(74,21,21,.07);padding:16px 18px;display:flex;align-items:flex-start;gap:10px;border-radius:2px}
+.tslot-x{font-size:9px;font-weight:700;letter-spacing:.06em;color:var(--red-deep);flex-shrink:0;margin-top:4px}
+.tslot-txt strong{display:block;font-size:12px;font-weight:600;color:var(--red-deep);margin-bottom:2px;letter-spacing:.02em}
+.tslot-txt span{font-size:10.5px;color:rgba(74,21,21,.5);line-height:1.5}
+.ideal-box{background:#f0f7f3;border:1px solid rgba(45,90,64,.14);padding:16px 18px;margin-top:14px;display:flex;align-items:flex-start;gap:10px;font-size:12.5px;color:var(--forest-mid);line-height:1.7;border-radius:2px}
+.ideal-check{color:var(--forest-light);font-size:14px;flex-shrink:0;margin-top:2px}
+
+/* ── ETIQUETTE ── */
+.etq-list{list-style:none}
+.etq-item{display:flex;align-items:flex-start;gap:18px;padding:18px 0;border-bottom:1px solid var(--ivory-2);font-size:13px;color:var(--ink-mid);line-height:1.75;letter-spacing:.02em}
+.etq-item:last-child{border-bottom:none;padding-bottom:0}
+.etq-num{font-family:var(--font-serif);font-size:17px;font-weight:400;font-style:italic;color:var(--sage);flex-shrink:0;min-width:22px;padding-top:1px}
+.etq-hl{background:#f5f9f6;border:1px solid rgba(45,90,64,.1);padding:24px 26px;margin:4px 0;flex:1;border-radius:2px}
+.tech-heading{font-family:var(--font-serif);font-size:18px;font-weight:500;color:var(--forest);margin-bottom:4px;display:block}
+.tech-sub{font-size:11.5px;color:var(--ink-faint);font-style:italic;margin-bottom:18px;display:block;letter-spacing:.02em}
+.tech-hands{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+.tech-hand{flex:1;min-width:140px;background:white;border:1px solid var(--ivory-3);padding:16px 18px;border-radius:2px}
+.tech-hand-lbl{display:block;font-size:8.5px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--sage);margin-bottom:7px}
+.tech-hand-txt{font-size:12px;color:var(--ink-mid);line-height:1.65}
+.tulasi-img-row{display:flex;align-items:center;gap:18px;background:white;border:1px solid var(--ivory-3);padding:16px 18px;border-radius:2px}
+.tulasi-img-row img{width:88px;height:88px;object-fit:cover;flex-shrink:0;border-radius:2px;filter:saturate(.88)}
+.tulasi-img-caption{font-size:11.5px;color:var(--ink-soft);line-height:1.65}
+.tulasi-img-caption strong{font-family:var(--font-serif);font-size:15px;font-weight:500;color:var(--forest);display:block;margin-bottom:4px}
+
+/* ── MANTRA CARD ── */
+.mantra-card{background:var(--forest);padding:64px 68px;position:relative;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.03)}
+.mantra-card::before{content:"ॐ";position:absolute;right:48px;top:20px;font-family:var(--font-deva);font-size:180px;opacity:.025;color:var(--gold-mid);line-height:1;pointer-events:none}
+.mantra-kicker{display:block;font-size:9px;font-weight:600;letter-spacing:.4em;text-transform:uppercase;color:var(--sage);margin-bottom:40px}
+.mantra-sa{font-family:var(--font-deva);font-weight:300;font-size:clamp(16px,2.6vw,22px);color:var(--gold-light);line-height:2.3;margin-bottom:28px;padding:24px 30px;border-left:2px solid rgba(181,133,30,.35);background:rgba(255,255,255,.02)}
+.mantra-roman{font-family:var(--font-serif);font-style:italic;font-weight:300;font-size:15px;color:rgba(255,255,255,.32);line-height:2.1;margin-bottom:26px;letter-spacing:.04em}
+.mantra-meaning{background:rgba(122,170,138,.07);border:1px solid rgba(122,170,138,.14);padding:20px 26px;font-size:13px;font-weight:300;color:var(--sage-light);line-height:1.85;font-style:italic;letter-spacing:.03em;border-radius:2px}
+.mantra-meaning strong{color:var(--sage-pale);font-style:normal;font-weight:500}
+
+/* ── EXCEPTION ── */
+.exc-card{background:var(--gold-faint);border:1px solid rgba(181,133,30,.2);padding:52px 60px;position:relative;overflow:hidden}
+.exc-card::after{content:"✦";position:absolute;right:50px;top:50%;transform:translateY(-50%);font-size:130px;opacity:.03;color:var(--gold);pointer-events:none}
+.exc-kicker{display:block;font-size:9px;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.exc-title{font-family:var(--font-serif);font-size:28px;font-weight:300;color:var(--ink);margin-bottom:34px;line-height:1.2}
+.exc-list{display:flex;flex-direction:column;gap:18px}
+.exc-item{display:flex;align-items:flex-start;gap:14px;font-size:13px;font-weight:300;color:var(--ink-mid);line-height:1.75;letter-spacing:.02em}
+.exc-bullet{width:5px;height:5px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:9px}
+
+/* ── DIVIDER ── */
+.section-divider{width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--ivory-3),transparent);margin:0}
+
+/* ── FOOTER ── */
+footer{background:var(--forest-deep);color:rgba(255,255,255,.22);text-align:center;padding:64px 24px;font-size:11.5px;font-weight:300;letter-spacing:.06em;line-height:2.2}
+footer .f-ornament{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:28px;opacity:.3}
+footer .f-ornament span{width:40px;height:1px;background:var(--gold);display:block}
+footer .f-ornament em{font-family:var(--font-serif);font-size:12px;color:var(--gold);font-style:normal}
+footer a{color:var(--sage);text-decoration:none}
+
+/* ── FADE UP ── */
+.fade-up{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.fade-up.visible{opacity:1;transform:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:760px){
+  nav{padding:0 18px}
+  .nav-links{display:none}
+  .checker-inner{grid-template-columns:1fr}
+  .ck-left{padding:30px 24px;border-right:none;border-bottom:1px solid rgba(255,255,255,.05)}
+  .ck-right{padding:30px 24px}
+  .grid2{grid-template-columns:1fr}
+  .quick-ref{grid-template-columns:1fr 1fr}
+  .tgrid{grid-template-columns:1fr}
+  .tulasi-img-row{flex-direction:column;text-align:center}
+  .mantra-card{padding:36px 26px}
+  .exc-card{padding:34px 26px}
+  .container{padding:0 20px 80px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#hero"><span class="nav-logo-dot"></span>Tulasi Portal</a>
+  <ul class="nav-links">
+    <li><a href="#today" class="nav-today">Today's Check</a></li>
+    <li><a href="#rules">Guidelines</a></li>
+    <li><a href="#mantra">Mantra</a></li>
+    <li><a href="#exception">Exception</a></li>
+  </ul>
+  <div class="translate-wrap">
+    <select class="translate-select" id="langSelect" onchange="translatePage(this.value)">
+      <option value="">🌐 Translate…</option>
+      <option value="hi">हिंदी</option>
+      <option value="kn">ಕನ್ನಡ</option>
+      <option value="te">తెలుగు</option>
+      <option value="ta">தமிழ்</option>
+      <option value="mr">मराठी</option>
+      <option value="bn">বাংলা</option>
+      <option value="gu">ગુજરાતી</option>
+      <option value="ml">മലയാളം</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="es">Español</option>
+      <option value="ja">日本語</option>
+      <option value="en">English (reset)</option>
+    </select>
+  </div>
+</nav>
+
+<div id="translateStatus" class="translate-status"></div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <p class="hero-kicker">Madhwa Sampradaya · Vishnu Devotion</p>
+  <div class="hero-ornament"><span></span><em>✦</em><span></span></div>
+  <h1>Tulasi <em>Devotion</em><br>Portal</h1>
+  <p class="hero-sub">Sacred Guidelines for Worship</p>
+  <button class="hero-cta" onclick="document.getElementById('today').scrollIntoView({behavior:'smooth'})">
+    Is Today Safe to Pluck? <span class="hero-cta-arrow">→</span>
+  </button>
+  <div class="scroll-cue">↓ &nbsp; scroll</div>
+</section>
+
+<div class="container">
+
+<!-- ── SECTION 1: TODAY ── -->
+<div class="section-head fade-up" id="today">
+  <span class="sec-kicker" id="lbl1">Step 1 — Check First</span>
+  <h2 class="sec-title" id="ttl1">Is Today Auspicious<br>for Plucking?</h2>
+  <div class="sec-ornament"><span></span><em>✦</em><span></span></div>
+</div>
+
+<div class="checker-card fade-up">
+  <div class="checker-inner">
+    <div class="ck-left">
+      <h3 id="todayH3">Today's Tulasi Check</h3>
+      <p id="todayDesc">Based on today's weekday, lunar tithi, yoga and karana — see if Tulasi leaves may be plucked today.</p>
+      <div id="todayResult">
+        <div style="color:rgba(255,255,255,.18);font-size:13px;font-style:italic;padding:8px 0">Calculating…</div>
+      </div>
+    </div>
+    <div class="ck-right">
+      <span class="p-section-label">Today's Panchang</span>
+      <div class="panchang-grid">
+        <div class="panchang-item"><span class="p-lbl">Weekday</span><div class="p-val" id="p-weekday">—</div></div>
+        <div class="panchang-item"><span class="p-lbl">Date</span><div class="p-val" id="p-date">—</div></div>
+        <div class="panchang-item"><span class="p-lbl">Lunar Tithi</span><div class="p-val" id="p-tithi">—</div><div class="p-sub" id="p-tithi-sub"></div></div>
+        <div class="panchang-item"><span class="p-lbl">Paksha</span><div class="p-val" id="p-paksha">—</div></div>
+        <div class="panchang-item"><span class="p-lbl">Yoga</span><div class="p-val" id="p-yoga">—</div><div class="p-sub" id="p-yoga-sub"></div></div>
+        <div class="panchang-item"><span class="p-lbl">Karana</span><div class="p-val" id="p-karana">—</div><div class="p-sub" id="p-karana-sub"></div></div>
+        <div class="panchang-item"><span class="p-lbl">🌅 Sunrise</span><div class="p-val" id="p-sunrise" style="font-size:15px">—</div><div class="p-sub" id="p-sunrise-sub"></div></div>
+        <div class="panchang-item"><span class="p-lbl">🌇 Sunset</span><div class="p-val" id="p-sunset" style="font-size:15px">—</div><div class="p-sub" id="p-sunset-sub"></div></div>
+        <div class="panchang-item" style="grid-column:span 2">
+          <span class="p-lbl">Plucking Window</span>
+          <div class="p-val" id="p-window">—</div>
+          <div class="p-sub">After sunrise · After bathing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-divider" style="margin:2px 0 0"></div>
+
+<!-- ── SECTION 2: RULES ── -->
+<div class="section-head fade-up" id="rules">
+  <span class="sec-kicker" id="lbl2">Step 2 — Know the Rules</span>
+  <h2 class="sec-title" id="ttl2">Complete Plucking Guidelines</h2>
+  <div class="sec-ornament"><span></span><em>✦</em><span></span></div>
+</div>
+
+<div class="quick-ref fade-up">
+  <div class="qr-cell"><span class="qr-kicker">Avoid Days</span><div class="qr-value">Tue · Fri · Sun</div></div>
+  <div class="qr-cell"><span class="qr-kicker">Avoid Tithis</span><div class="qr-value">Ekadashi · Dwadashi<br>Amavasya · Purnima</div></div>
+  <div class="qr-cell"><span class="qr-kicker">Best Time</span><div class="qr-value">Early morning<br>after sunrise &amp; bath</div></div>
+  <div class="qr-cell"><span class="qr-kicker">Always Allowed</span><div class="qr-value">Saligrama &amp;<br>Vishnu worship</div></div>
+</div>
+
+<div class="grid2" style="margin-top:2px">
+  <div class="card fade-up">
+    <div class="card-stripe stripe-red"></div>
+    <div class="card-body">
+      <span class="card-kicker">Rule 01</span>
+      <div class="card-title">Days to Avoid</div>
+      <div class="tags">
+        <span class="tag t-red">Tuesday</span>
+        <span class="tag t-red">Friday</span>
+        <span class="tag t-red">Sunday</span>
+      </div>
+    </div>
+  </div>
+  <div class="card fade-up">
+    <div class="card-stripe stripe-red"></div>
+    <div class="card-body">
+      <span class="card-kicker">Rule 02</span>
+      <div class="card-title">Lunar Tithis to Avoid</div>
+      <div class="tags">
+        <span class="tag t-red">Ekadashi</span>
+        <span class="tag t-red">Dwadashi</span>
+        <span class="tag t-red">Amavasya</span>
+        <span class="tag t-red">Purnima</span>
+      </div>
+      <p class="card-note">Collect leaves on Dashami — the day before Ekadashi — for next-day worship.</p>
+    </div>
+  </div>
+</div>
+
+<div class="grid2" style="margin-top:2px">
+  <div class="card fade-up">
+    <div class="card-stripe stripe-blue"></div>
+    <div class="card-body">
+      <span class="card-kicker">Rule 03</span>
+      <div class="card-title">Astrological Yogas to Avoid</div>
+      <div class="tags">
+        <span class="tag t-blue">Vaidhriti Yoga</span>
+        <span class="tag t-blue">Vyatipata Yoga</span>
+      </div>
+      <p class="card-note">Verify in your local Panchang — these inauspicious yogas occur several times monthly.</p>
+    </div>
+  </div>
+  <div class="card fade-up">
+    <div class="card-stripe stripe-red"></div>
+    <div class="card-body">
+      <span class="card-kicker">Rule 04</span>
+      <div class="card-title">Special Situations</div>
+      <div class="tags">
+        <span class="tag t-red">Sankranti</span>
+        <span class="tag t-red">Solar Eclipse</span>
+        <span class="tag t-red">Lunar Eclipse</span>
+        <span class="tag t-red">Janana Ashaucha</span>
+        <span class="tag t-red">Marana Ashaucha</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card fade-up" style="margin-top:2px">
+  <div class="card-stripe stripe-sage"></div>
+  <div class="card-body">
+    <span class="card-kicker">Rule 05</span>
+    <div class="card-title" style="margin-bottom:20px">Time of Day Restrictions</div>
+    <div class="tgrid">
+      <div class="tslot"><span class="tslot-x">✕</span><div class="tslot-txt"><strong>Before Sunrise</strong><span>Plucking in darkness is not permitted</span></div></div>
+      <div class="tslot"><span class="tslot-x">✕</span><div class="tslot-txt"><strong>Madhyahna Sandhya</strong><span>Avoid during the midday prayer period</span></div></div>
+      <div class="tslot"><span class="tslot-x">✕</span><div class="tslot-txt"><strong>Evening Sandhya</strong><span>Tulasi rests during the dusk prayer time</span></div></div>
+      <div class="tslot"><span class="tslot-x">✕</span><div class="tslot-txt"><strong>Night (after sunset)</strong><span>Tulasi should not be disturbed at night</span></div></div>
+    </div>
+    <div class="ideal-box">
+      <span class="ideal-check">✓</span>
+      <div><strong style="font-weight:600">Ideal Time:</strong> Early morning after sunrise, following a bath. Brahma Muhurta through mid-morning is most auspicious.</div>
+    </div>
+  </div>
+</div>
+
+<div class="card fade-up" style="margin-top:2px">
+  <div class="card-stripe stripe-gold"></div>
+  <div class="card-body">
+    <span class="card-kicker">Sacred Conduct</span>
+    <div class="card-title" style="margin-bottom:20px">While Plucking Tulasi</div>
+    <ul class="etq-list">
+      <li class="etq-item"><span class="etq-num">1</span><span>Bathe or wash hands and body before approaching the Tulasi plant</span></li>
+      <li class="etq-item"><span class="etq-num">2</span><span>Remove footwear — never stand with footwear near the Tulasi plant</span></li>
+      <li class="etq-item"><span class="etq-num">3</span><span>Offer a short prayer to Tulasi Mata before plucking — recite the mantra in Section 3 below</span></li>
+      <li class="etq-item" style="align-items:flex-start;border-bottom:1px solid var(--ivory-2)">
+        <span class="etq-num">4</span>
+        <div class="etq-hl">
+          <span class="tech-heading">Correct Plucking Technique</span>
+          <span class="tech-sub">Approach with complete devotion — never use fingernails</span>
+          <div class="tech-hands">
+            <div class="tech-hand"><span class="tech-hand-lbl">Left Hand</span><p class="tech-hand-txt">Hold the stem or branch gently to support and steady the plant while plucking</p></div>
+            <div class="tech-hand"><span class="tech-hand-lbl">Right Hand</span><p class="tech-hand-txt">Use fingertips respectfully to detach the leaf with its petiole (small stem) intact</p></div>
+          </div>
+          <div class="tulasi-img-row">
+            <img src="data:image/jpeg;base64,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" alt="Tulasi plant">
+            <div class="tulasi-img-caption"><strong>Tulasi — Ocimum tenuiflorum</strong>Pluck only fresh, whole leaves with the small stem attached. Do not offer fallen, broken, or wilted leaves to the deity.</div>
+          </div>
+        </div>
+      </li>
+      <li class="etq-item"><span class="etq-num">5</span><span>Pluck each leaf with its small stem (petiole) intact — never detach the leaf blade alone</span></li>
+      <li class="etq-item"><span class="etq-num">6</span><span>Do not offer fallen, broken, insect-damaged, or wilted leaves to the deity</span></li>
+      <li class="etq-item"><span class="etq-num">7</span><span>Approach with a calm, devoted mind — never hurriedly or mechanically</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ── SECTION 3: MANTRA ── -->
+<div class="section-head fade-up" id="mantra">
+  <span class="sec-kicker" id="lbl3">Step 3 — Recite Before Plucking</span>
+  <h2 class="sec-title" id="ttl3">Tulasi Plucking Mantra</h2>
+  <div class="sec-ornament"><span></span><em>✦</em><span></span></div>
+</div>
+
+<div class="mantra-card fade-up">
+  <span class="mantra-kicker">Plucking Prayer · Recite before taking leaves from the plant</span>
+  <div class="mantra-sa" lang="sa">
+    तुलस्यामृतजन्मासि सदा त्वं केशवप्रिया ।<br>
+    केशवार्थे चिनोमि त्वां वरदा भव शोभने ॥
+  </div>
+  <div class="mantra-roman" id="mantraRoman">
+    Tulasyāmṛta janmāsi sadā tvaṃ keśava priyā |<br>
+    Keśavārthe cinomi tvāṃ varadā bhava śobhane ||
+  </div>
+  <div class="mantra-meaning" id="mantraMeaning">
+    <strong>Meaning —</strong> O Tulasi, you are born of nectar and are ever beloved of Lord Keshava (Vishnu). I pluck you only for the purpose of His worship. O auspicious one, be gracious and grant me your blessings.
+  </div>
+</div>
+
+<!-- ── SECTION 4: EXCEPTION ── -->
+<div class="section-head fade-up" id="exception">
+  <span class="sec-kicker" id="lbl5">Important Override</span>
+  <h2 class="sec-title" id="ttl5">When Any Day Is Permitted</h2>
+  <div class="sec-ornament"><span></span><em>✦</em><span></span></div>
+</div>
+
+<div class="exc-card fade-up">
+  <span class="exc-kicker">Sacred Exception</span>
+  <div class="exc-title">For Saligrama &amp; Vishnu Worship —<br>All Restrictions Are Lifted</div>
+  <div class="exc-list">
+    <div class="exc-item"><div class="exc-bullet"></div><span>Tulasi leaves <strong>may be plucked on any restricted day</strong> — including Ekadashi, Sunday, or during an eclipse — when required for <strong>Saligrama or Vishnu worship</strong>. The sanctity of that worship takes absolute precedence.</span></div>
+    <div class="exc-item"><div class="exc-bullet"></div><span>Leaves may be plucked on <strong>the permitted day before</strong> a restricted day and stored reverently. This is standard practice before Ekadashi.</span></div>
+    <div class="exc-item"><div class="exc-bullet"></div><span><strong>Previously plucked or dried Tulasi leaves</strong> are fully accepted and auspicious for Vishnu or Saligrama puja on any day, without restriction.</span></div>
+  </div>
+</div>
+
+</div><!-- /container -->
+
+<footer>
+  <div class="f-ornament"><span></span><em>✦</em><span></span></div>
+  <div>Tulasi is a sacred manifestation of the divine — approach always with purity, devotion, and reverence.</div>
+  <div style="margin-top:6px;opacity:.5">For authoritative guidance, consult a learned Madhwa Acharya or the Udupi Ashta Mathas.</div>
+</footer>
+
+<script>
+// ══════ TRANSLATION ══════
+const TRANSLATE_IDS = ['lbl1','ttl1','lbl2','ttl2','lbl3','ttl3','lbl5','ttl5','todayH3','todayDesc','mantraRoman','mantraMeaning'];
+const originalTexts = {};
+let isTranslating = false;
+
+function cacheOriginals() {
+  TRANSLATE_IDS.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) originalTexts[id] = el.innerText || el.textContent;
+  });
+}
+
+function translatePage(targetLang) {
+  var status = document.getElementById('translateStatus');
+  if (!targetLang || targetLang === 'en') {
+    restoreOriginals();
+    document.getElementById('langSelect').value = '';
+    status.className = 'translate-status';
+    return;
+  }
+  if (isTranslating) return;
+  isTranslating = true;
+  status.className = 'translate-status show';
+  status.innerHTML = '<span class="translate-spinner">⟳</span> Translating…';
+  var texts = [];
+  TRANSLATE_IDS.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) texts.push((el.innerText || el.textContent).trim());
+  });
+  batchTranslate(texts, targetLang).then(function(translated) {
+    var idx = 0;
+    TRANSLATE_IDS.forEach(function(id) {
+      var el = document.getElementById(id);
+      if (!el) return;
+      if (translated[idx]) el.textContent = translated[idx];
+      idx++;
+    });
+    status.innerHTML = '✓ Translated';
+    setTimeout(function() { status.className = 'translate-status'; }, 3000);
+    isTranslating = false;
+  }).catch(function() {
+    status.innerHTML = '⚠ Translation unavailable';
+    setTimeout(function() { status.className = 'translate-status'; }, 4000);
+    isTranslating = false;
+  });
+}
+
+function batchTranslate(texts, targetLang) {
+  var promises = texts.map(function(t) { return translateOne(t, targetLang); });
+  return Promise.all(promises);
+}
+
+function translateOne(text, targetLang) {
+  if (!text || text.length < 2) return Promise.resolve(text);
+  var url = 'https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text) + '&langpair=en|' + targetLang;
+  return fetch(url).then(function(r) { return r.json(); }).then(function(d) {
+    if (d.responseStatus === 200 && d.responseData && d.responseData.translatedText) return d.responseData.translatedText;
+    return text;
+  }).catch(function() { return text; });
+}
+
+function restoreOriginals() {
+  TRANSLATE_IDS.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el && originalTexts[id]) el.textContent = originalTexts[id];
+  });
+}
+
+// ══════ LUNAR ENGINE ══════
+var KNOWN_NEW_MOON = new Date(2025, 0, 29);
+var LUNAR_MONTH = 29.53059;
+
+function getLunarAge(date) {
+  var diff = (date - KNOWN_NEW_MOON) / 86400000;
+  return ((diff % LUNAR_MONTH) + LUNAR_MONTH) % LUNAR_MONTH;
+}
+
+function getTithi(date) {
+  var age = getLunarAge(date);
+  var n = Math.min(Math.floor(age / (LUNAR_MONTH / 30)) + 1, 30);
+  var s = ["Pratipada","Dwitiya","Tritiya","Chaturthi","Panchami","Shashthi","Saptami","Ashtami","Navami","Dashami","Ekadashi","Dwadashi","Trayodashi","Chaturdashi","Purnima"];
+  var k = ["Pratipada","Dwitiya","Tritiya","Chaturthi","Panchami","Shashthi","Saptami","Ashtami","Navami","Dashami","Ekadashi","Dwadashi","Trayodashi","Chaturdashi","Amavasya"];
+  if (n <= 15) return {paksha:"Shukla Paksha", name:s[n-1]};
+  return {paksha:"Krishna Paksha", name:k[n-16]};
+}
+
+// ══════ YOGA CALCULATOR ══════
+var YOGA_NAMES = ["Vishkambha","Priti","Ayushman","Saubhagya","Shobhana","Atiganda","Sukarma","Dhriti","Shula","Ganda","Vriddhi","Dhruva","Vyaghata","Harshana","Vajra","Siddhi","Vyatipata","Variyan","Parigha","Shiva","Siddha","Sadhya","Shubha","Shukla","Brahma","Indra","Vaidhriti"];
+var INAUSPICIOUS_YOGAS = ["Vyatipata","Vaidhriti"];
+
+function getSunLongitude(date) {
+  var JD = date / 86400000 + 2440587.5;
+  var n = JD - 2451545.0;
+  var L = (280.46 + 0.9856474 * n) % 360;
+  var g = ((357.528 + 0.9856003 * n) % 360) * Math.PI / 180;
+  return (L + 1.915 * Math.sin(g) + 0.02 * Math.sin(2 * g) + 360) % 360;
+}
+
+function getMoonLongitude(date) {
+  var age = getLunarAge(date);
+  var sunLon = getSunLongitude(date);
+  return (sunLon + age * (360 / LUNAR_MONTH) + 360) % 360;
+}
+
+function getYoga(date) {
+  var sunLon = getSunLongitude(date);
+  var moonLon = getMoonLongitude(date);
+  var sum = (sunLon + moonLon) % 360;
+  var idx = Math.floor(sum / (360 / 27));
+  var name = YOGA_NAMES[idx];
+  return { name: name, inauspicious: INAUSPICIOUS_YOGAS.indexOf(name) !== -1 };
+}
+
+// ══════ KARANA CALCULATOR ══════
+var KARANA_NAMES = ["Bava","Balava","Kaulava","Taitila","Garaja","Vanija","Vishti","Shakuni","Chatushpada","Naga","Kimstughna"];
+
+function getKarana(date) {
+  var age = getLunarAge(date);
+  var halfTithi = age / (LUNAR_MONTH / 60);
+  var idx = Math.floor(halfTithi) % 11;
+  var name = KARANA_NAMES[idx];
+  return { name: name, inauspicious: name === "Vishti" };
+}
+
+// ══════ SUNRISE/SUNSET (NOAA algorithm) ══════
+function calcSunTimes(lat, lon, date) {
+  var rad = Math.PI / 180;
+  var JD = Math.floor(date / 86400000) + 2440587.5;
+  var JC = (JD - 2451545) / 36525;
+  var geomMeanLongSun = (280.46646 + JC * (36000.76983 + JC * 0.0003032)) % 360;
+  var geomMeanAnomSun = 357.52911 + JC * (35999.05029 - 0.0001537 * JC);
+  var eccEarthOrbit = 0.016708634 - JC * (0.000042037 + 0.0000001267 * JC);
+  var sunEqOfCtr = Math.sin(rad * geomMeanAnomSun) * (1.914602 - JC * (0.004817 + 0.000014 * JC))
+    + Math.sin(rad * 2 * geomMeanAnomSun) * (0.019993 - 0.000101 * JC)
+    + Math.sin(rad * 3 * geomMeanAnomSun) * 0.000289;
+  var sunTrueLon = geomMeanLongSun + sunEqOfCtr;
+  var sunAppLon = sunTrueLon - 0.00569 - 0.00478 * Math.sin(rad * (125.04 - 1934.136 * JC));
+  var meanObliq = 23 + (26 + (21.448 - JC * (46.8150 + JC * (0.00059 - JC * 0.001813))) / 60) / 60;
+  var obliqCorr = meanObliq + 0.00256 * Math.cos(rad * (125.04 - 1934.136 * JC));
+  var sunDeclin = Math.asin(Math.sin(rad * obliqCorr) * Math.sin(rad * sunAppLon)) / rad;
+  var y = Math.tan(rad * (obliqCorr / 2)) * Math.tan(rad * (obliqCorr / 2));
+  var eqOfTime = 4 / rad * (
+    y * Math.sin(2 * rad * geomMeanLongSun)
+    - 2 * eccEarthOrbit * Math.sin(rad * geomMeanAnomSun)
+    + 4 * eccEarthOrbit * y * Math.sin(rad * geomMeanAnomSun) * Math.cos(2 * rad * geomMeanLongSun)
+    - 0.5 * y * y * Math.sin(4 * rad * geomMeanLongSun)
+    - 1.25 * eccEarthOrbit * eccEarthOrbit * Math.sin(2 * rad * geomMeanAnomSun)
+  );
+  var cosHour = Math.cos(rad * 90.833) / (Math.cos(rad * lat) * Math.cos(rad * sunDeclin))
+    - Math.tan(rad * lat) * Math.tan(rad * sunDeclin);
+  if (cosHour < -1 || cosHour > 1) return null;
+  var haSunrise = Math.acos(cosHour) / rad;
+  var solarNoon = 720 - 4 * lon - eqOfTime;
+  var sunriseUTC = solarNoon - haSunrise * 4;
+  var sunsetUTC  = solarNoon + haSunrise * 4;
+
+  function minsToTime(mins) {
+    var tzOffset = date.getTimezoneOffset();
+    var local = ((mins - tzOffset) % 1440 + 1440) % 1440;
+    var h = Math.floor(local / 60);
+    var m = Math.floor(local % 60);
+    var ampm = h >= 12 ? "PM" : "AM";
+    var h12 = h % 12 || 12;
+    return h12 + ":" + (m < 10 ? "0" : "") + m + " " + ampm;
+  }
+  return { sunrise: minsToTime(sunriseUTC), sunset: minsToTime(sunsetUTC) };
+}
+
+// ══════ MAIN PANCHANG CHECK ══════
+function checkToday() {
+  var today = new Date();
+  var day   = today.getDay();
+  var tithi  = getTithi(today);
+  var yoga   = getYoga(today);
+  var karana = getKarana(today);
+  var days   = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+  var reasons = [];
+  if (day === 0) reasons.push("Sunday");
+  if (day === 2) reasons.push("Tuesday");
+  if (day === 5) reasons.push("Friday");
+  if (["Ekadashi","Dwadashi","Amavasya","Purnima"].indexOf(tithi.name) !== -1) reasons.push(tithi.name);
+  if (yoga.inauspicious)   reasons.push(yoga.name + " Yoga");
+  if (karana.inauspicious) reasons.push("Vishti (Bhadra) Karana");
+
+  document.getElementById("p-weekday").textContent = days[day];
+  document.getElementById("p-date").textContent    = today.toLocaleDateString("en-IN", {day:"numeric",month:"short",year:"numeric"});
+  document.getElementById("p-tithi").textContent   = tithi.name;
+  document.getElementById("p-tithi-sub").textContent = tithi.paksha;
+  document.getElementById("p-paksha").textContent  = tithi.paksha.split(" ")[0];
+
+  var yogaEl = document.getElementById("p-yoga");
+  yogaEl.textContent = yoga.name;
+  yogaEl.style.color = yoga.inauspicious ? "#c07878" : "var(--ivory)";
+  var yogaSub = document.getElementById("p-yoga-sub");
+  yogaSub.textContent = yoga.inauspicious ? "⚠ Inauspicious" : "Auspicious";
+  yogaSub.style.color = yoga.inauspicious ? "#c07878" : "var(--sage)";
+
+  var karanaEl = document.getElementById("p-karana");
+  karanaEl.textContent = karana.name;
+  karanaEl.style.color = karana.inauspicious ? "#c07878" : "var(--ivory)";
+  var karanaSub = document.getElementById("p-karana-sub");
+  karanaSub.textContent = karana.inauspicious ? "⚠ Bhadra" : "Auspicious";
+  karanaSub.style.color = karana.inauspicious ? "#c07878" : "var(--sage)";
+
+  document.getElementById("p-window").textContent = reasons.length === 0 ? "Morning window open ✓" : "Restricted today";
+
+  var el = document.getElementById("todayResult");
+  if (reasons.length === 0) {
+    el.className = "result-safe";
+    el.innerHTML = '<div class="result-big">✅ Auspicious Today</div><div class="result-detail">Today (' + days[day] + ', ' + tithi.name + ', ' + yoga.name + ' Yoga) has no restrictions.<br><br><strong style="color:var(--sage-light)">Pluck in the early morning after bathing. Recite the mantra before plucking.</strong><br><br><span style="font-size:11px;opacity:0.5">Also verify Sankranti and eclipse in your local Panchang.</span></div>';
+  } else {
+    var tags = reasons.map(function(r) { return '<span class="rtag">✕ ' + r + '</span>'; }).join('');
+    el.className = "result-unsafe";
+    el.innerHTML = '<div class="result-big">🚫 Restricted Today</div><div class="result-detail">Tulasi should <strong>not</strong> be plucked today due to:<br><div style="margin:8px 0">' + tags + '</div><strong style="color:#e07070">Collect from yesterday or use previously stored leaves.</strong><br><br><span style="font-size:11px;opacity:0.5">Exception: Always permitted for Saligrama or Vishnu puja.</span></div>';
+  }
+
+  // Sunrise / Sunset — pure JS, no API
+  function applySun(lat, lon, label) {
+    var sun = calcSunTimes(lat, lon, today);
+    if (sun) {
+      document.getElementById("p-sunrise").textContent = sun.sunrise;
+      document.getElementById("p-sunset").textContent  = sun.sunset;
+      document.getElementById("p-sunrise-sub").textContent = label;
+      document.getElementById("p-sunset-sub").textContent  = label;
+      if (reasons.length === 0) {
+        document.getElementById("p-window").textContent = "After " + sun.sunrise + " ✓";
+      }
+    }
+  }
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      function(pos) { applySun(pos.coords.latitude, pos.coords.longitude, "Your location"); },
+      function()    { applySun(17.3850, 78.4867, "Hyderabad"); }
+    );
+  } else {
+    applySun(17.3850, 78.4867, "Hyderabad");
+  }
+}
+
+// ══════ SCROLL FADE ══════
+function initFadeUp() {
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e, i) {
+      if (e.isIntersecting) {
+        setTimeout(function() { e.target.classList.add("visible"); }, i * 70);
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.06 });
+  document.querySelectorAll('.fade-up').forEach(function(el) { obs.observe(el); });
+}
+
+// ══════ INIT ══════
+document.addEventListener("DOMContentLoaded", function() {
+  cacheOriginals();
+  checkToday();
+  initFadeUp();
+});
+</script>
+</body>
+</html>
