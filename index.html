@@ -1,417 +1,621 @@
+
+
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Tulasi Devotion Portal · Sacred Guidelines for Vishnu Worship</title> <style> :root { --forest-deep:#06120a;--forest:#0b1e13;--forest-mid:#1a3828;--f
+
+pasted
+
+review this code .. I dont like UI with green backdrop etc., can you redesign UI with minimalist and professional colors and enhance any other parameters to redesign the website :
+
+8:49 pm
+
+Reading frontend design skill
+Reading frontend design skill
+Now I'll redesign this with a clean, minimalist, professional aesthetic — think luxury editorial: warm ivory/cream tones, deep charcoal typography, subtle gold accents, refined serif/sans pairing. No green, no forest palette.
+
+
+Created a file, read a file
+Created a file, read a file
+Here's the fully redesigned portal. Here's what changed:
+
+Color palette — complete overhaul
+
+Replaced all greens/forest tones with a warm cream/ivory/stone base
+Typography uses deep charcoal ink (
+#1a1714) instead of white-on-dark-green
+Accent is a refined antique gold (
+#b08d57) — restrained, not gaudy
+Status colors are subtle: muted terracotta-red for restrictions, soft sage-green for safe — no bright traffic-light colors
+Typography — upgraded
+
+Switched to Cormorant Garamond (elegant display serif) + DM Sans (clean body) from Google Fonts
+Better hierarchy with tighter letter-spacing and weight contrast
+Layout & UI refinements
+
+Nav has a delicate bottom underline hover instead of background highlight
+Hero is clean white/cream with a single vertical gold line — no dramatic radial gradients
+Panchang grid uses a white-on-cream cell pattern — airy and readable
+Summary strip uses deep charcoal with light text — a single strong dark moment
+Cards have hairline 2px accent stripes instead of heavy colored bars
+Mantra card stays dark (ink background) as a deliberate contrast block, but now reads as luxury editorial
+Tulasi portal
+Code · HTML 
+thulasi image missing
+
+8:57 pm
+The image is a base64 placeholder from the original code that doesn't render properly. Let me fetch a real Tulasi plant image.
+
+
+Failed to fetch: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tulasi_in_pot.jpg/320px-Tulasi_in_pot.jpg
+Failed to fetch: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tulasi_in_pot.jpg/320px-Tulasi_in_pot.jpg
+Holy basil | Description, Uses, Tulsi, Hinduism, & Facts | Britannica
+Britannica
+Holy Basil Tulsi - Rama Tulsi (Green Tulsi) - MyGreenLeaf - Buy Indoor ...
+
+mygreenleaf.ae
+Fresh Green Holy Basil Tulsi Leaves on a Transparent Background - Photo ...
+
+pngfile.net
+Results from the web
+I'll replace the broken base64 image with an inline SVG illustration of a Tulasi plant — this will always render perfectly without any external dependency.
+
+
+Viewed a file, edited a file, read a file
+Viewed a file, edited a file, read a file
+Fixed! The broken base64 JPEG has been replaced with an inline SVG illustration of a Tulasi plant — it shows the characteristic features: branching stems, oval leaves, and the purple flower spike at the top, all on a soft green background. Since it's pure SVG embedded directly in the HTML, it will always render perfectly with no external dependencies.
+
+Tulasi portal
+Code · HTML 
+use attached image in website
+
+9:04 pm
+
+Ran 6 commands, viewed a file, read a file
+Ran 6 commands, viewed a file, read a file
+Done! Your actual Tulasi photo is now embedded directly in the HTML as a base64 image — no external links needed, so it will always display correctly. The image shows the beautiful green leaves with the characteristic purple flower spikes, right next to the plucking technique description.
+
+Tulasi portal
+Code · HTML 
+enhance Today's Panchang section :   Can we make this dynamic by allowing users to change date and basis the date selected show corresponding panchanga elements accurately  and say if its auspicious to pluck tulasi or not in Today's Tulasi Check section and Plucking Window
+Restricted today fields .  Let me know if this is doable first before making changes.. and any other enhancements you recommend in this portal let me know post confirmatiion only make changes
+
+9:10 pm
+Great question! Yes, this is absolutely doable. Here's what's possible and what I'd recommend:
+
+What's fully doable (client-side, no API needed):
+
+The date picker driving Panchang is straightforward — the existing lunar engine (tithi, yoga, karana calculations) already works for any date, it's just hardcoded to new Date() right now. Changing it to use a selected date and re-running all calculations is a clean, reliable change.
+
+Recommended enhancements I can make:
+
+Date picker in the Panchang panel — select any past or future date, all fields update instantly: tithi, paksha, yoga, karana, sunrise/sunset, plucking window, and the verdict card on the left.
+"Today" reset button — one click snaps back to the current date.
+Nakshatra — the 27-star lunar mansion (calculated from moon longitude, same engine). Useful and commonly shown in Panchangs.
+Vara (weekday deity) — small tooltip or sub-label showing which deity governs the day (e.g. Monday = Chandra, Thursday = Guru).
+Dashami pre-collection reminder — if the selected date is Dashami, show a gentle callout: "Collect extra leaves today — tomorrow is Ekadashi."
+Scroll-linked date in nav — show the selected date subtly in the nav when scrolled down.
+What I'd be cautious about:
+
+Precise IST sunrise/sunset is already calculated via NOAA algorithm in the code — it's accurate to ±2 min for most of India, which is good enough.
+Eclipse detection requires ephemeris data — I'd skip that and keep the existing note to "verify eclipses in local Panchang."
+My recommendation: Items 1–5 give the most value. Shall I go ahead with all five, or would you like to pick specific ones?
+
+go ahead with all five  what about 6?
+
+9:12 pm
+Yes, #6 (scroll-linked date in nav) is also doable — when you scroll past the hero, the nav subtly shows the selected date like 14 Mar 2026 next to the brand logo. Clean and useful.
+
+So the full list I'll implement:
+
+✅ Date picker — full Panchang recalculates on any date change
+✅ Today reset button
+✅ Nakshatra (27 lunar mansions from moon longitude)
+✅ Vara weekday deity labels
+✅ Dashami pre-collection reminder callout
+✅ Scroll-linked date in nav
+Making all changes now.
+
+
+Viewed 2 files
+Viewed 2 files
+Now I have a full picture. Let me build the enhanced version:
+
+
+Ran 2 commands
+Ran 2 commands
+Good. Now I'll write the fully enhanced file:
+
+
+Running command
+Running command
+Claude's response was interrupted
+also ensure fonts should be dark enough to visible clearly along with 6 enhancements listed above
+
+9:13 pm
+Got it — I'll fix font contrast throughout and implement all 6 enhancements in one clean build.
+
+
+Ran 3 commands
+Ran 3 commands
+All checks pass. Let me present the file:
+
+
+Presented file
+Presented file
+All 6 enhancements are live, plus the font contrast overhaul. Here's exactly what changed:
+
+Font contrast fixes — Every text layer darkened significantly: body copy is now near-black 
+#1a1714, sub-labels 
+#52442e, kickers 
+#5e4e3a. The cream background is slightly warmer so the contrast ratio is comfortably above WCAG AA throughout.
+
+Enhancement 1 — Date picker — A clean date input sits above the result box. Change any date and the entire Panchang (tithi, paksha, yoga, karana, nakshatra, masa, sunrise, sunset, plucking window, and the verdict card) all recalculate instantly. Range is capped to ±3 years.
+
+Enhancement 2 — Today reset button — The "↺ Today" button snaps everything back to the current date in one click.
+
+Enhancement 3 — Nakshatra — New Panchang cell showing the lunar mansion (all 27: Ashwini → Revati), pada number (1–4), and the presiding deity (e.g. Pada 2 · Brahma).
+
+Enhancement 4 — Vara deity — Below each weekday name, a small italic line shows the governing planet/deity (e.g. Monday → Deity: Chandra (Moon), Thursday → Deity: Guru (Jupiter)).
+
+Enhancement 5 — Dashami reminder — When the selected date is Dashami (10th tithi), a gold callout automatically appears below the verdict: "Tomorrow is Ekadashi — collect extra leaves today."
+
+Enhancement 6 — Scroll date badge — Once you scroll past the hero, a small pill badge appears next to the nav logo showing the selected date (or "Today"). It fades in/out smoothly as you scroll up and down.
+
+Tulasi portal
+Code · HTML 
+
+
+
+
+
+Claude is AI and can make mistakes. Please double-check responses.
+Tulasi portal · HTML
+Copy
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tulasi Devotion Portal · Sacred Guidelines for Vishnu Worship</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
 <style>
 :root {
-  --forest-deep:#06120a;--forest:#0b1e13;--forest-mid:#1a3828;--forest-light:#2d5a40;
-  --sage:#7aaa8a;--sage-light:#aecfba;--sage-pale:#ddeee4;
-  --gold:#b5851e;--gold-mid:#cfa040;--gold-light:#e8c87a;--gold-pale:#f5e9c4;--gold-faint:#fbf5e4;
-  --ivory:#faf7f0;--ivory-2:#f2ede0;--ivory-3:#e4dcc8;
-  --ink:#18170f;--ink-mid:#3a3826;--ink-soft:#6a6650;--ink-faint:#9a9278;
-  --red-deep:#4a1515;--red-pale:#fdf4f4;
-  --blue-deep:#162540;--blue-pale:#f0f4fa;
-  --font-serif:"Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;
-  --font-sans:"Segoe UI",Optima,Candara,sans-serif;
-  --font-deva:"Mangal","Aparajita","Kokila",serif;
+  --cream:#faf8f4; --cream-2:#f2ece0; --cream-3:#e6dccb; --cream-4:#d9ccb5;
+  --stone:#b8a990; --stone-mid:#8c7a65; --stone-deep:#5e4e3a;
+  --gold:#9a7535; --gold-light:#b8912a; --gold-pale:#edddb8; --gold-faint:#faf3e4;
+  --ink:#100e0b; --ink-2:#1e1a14; --ink-3:#3a3020; --ink-4:#52442e; --ink-5:#6e5e48;
+  --white:#ffffff;
+  --warn-bg:#fdf5e6; --warn-border:#c89840; --warn-text:#4a2e00;
+  --safe-bg:#f0f7f2; --safe-border:#5a9470; --safe-text:#0e3320;
+  --restrict-bg:#fdf0ee; --restrict-border:#b86050; --restrict-text:#4a1008;
+  --dashami-bg:#fefbf0; --dashami-border:#c8a020; --dashami-text:#3a2800;
+  --font-display:'Cormorant Garamond', Georgia, serif;
+  --font-body:'DM Sans', system-ui, sans-serif;
+  --font-deva:'Mangal','Aparajita','Kokila',serif;
+  --radius:3px;
+  --shadow-sm:0 1px 4px rgba(16,14,11,.08);
+  --shadow-md:0 4px 18px rgba(16,14,11,.11);
+  --shadow-lg:0 18px 52px rgba(16,14,11,.13);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--font-sans);background:var(--ivory);color:var(--ink);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-::-webkit-scrollbar{width:3px}
-::-webkit-scrollbar-track{background:var(--ivory-2)}
-::-webkit-scrollbar-thumb{background:var(--sage)}
-
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);background:var(--cream);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--gold-pale);color:var(--ink)}
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--cream-2)}
+::-webkit-scrollbar-thumb{background:var(--stone);border-radius:2px}
+ 
 /* ── NAV ── */
-nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(6,18,10,.97);backdrop-filter:blur(24px);display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:60px;border-bottom:1px solid rgba(181,133,30,.12)}
-.nav-logo{font-family:var(--font-serif);font-size:18px;font-weight:400;font-style:italic;color:var(--gold-light);text-decoration:none;letter-spacing:.05em;display:flex;align-items:center;gap:10px}
-.nav-logo-dot{width:6px;height:6px;background:var(--gold-mid);border-radius:50%;display:inline-block}
-.nav-links{display:flex;list-style:none;gap:2px}
-.nav-links a{color:rgba(255,255,255,.38);text-decoration:none;font-size:10px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:6px 14px;transition:color .2s;border-radius:2px}
-.nav-links a:hover{color:var(--gold-light)}
-.nav-today{color:var(--forest)!important;background:var(--gold-mid)!important;padding:6px 16px!important}
-.nav-today:hover{background:var(--gold-light)!important}
-.translate-wrap{display:flex;align-items:center;gap:8px}
-.translate-select{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.45);padding:5px 28px 5px 10px;font-family:var(--font-sans);font-size:10px;letter-spacing:.05em;cursor:pointer;outline:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='4'%3E%3Cpath d='M0 0l4 4 4-4z' fill='%23cfa040'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8px center;min-width:140px;transition:border-color .2s;border-radius:2px}
-.translate-select option{background:#1a3828;color:white}
-.translate-select:focus{border-color:var(--gold-mid)}
-.translate-status{text-align:center;font-size:11px;letter-spacing:.08em;color:var(--ink-soft);background:var(--ivory-2);border-bottom:1px solid var(--ivory-3);padding:5px;display:none}
-.translate-status.show{display:block}
-.translate-spinner{display:inline-block;animation:spin 1s linear infinite}
+nav{position:fixed;top:0;left:0;right:0;z-index:900;height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;background:rgba(250,248,244,.95);backdrop-filter:blur(20px) saturate(1.3);border-bottom:1px solid var(--cream-3)}
+.nav-left{display:flex;align-items:center;gap:14px}
+.nav-brand{display:flex;align-items:center;gap:9px;font-family:var(--font-display);font-size:17px;font-weight:500;font-style:italic;color:var(--ink);text-decoration:none;letter-spacing:.02em}
+.nav-brand-mark{width:27px;height:27px;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--gold);flex-shrink:0}
+/* scroll date badge */
+.nav-date-badge{font-family:var(--font-body);font-size:10.5px;font-weight:500;letter-spacing:.06em;color:var(--ink-3);background:var(--gold-faint);border:1px solid var(--gold-pale);padding:3px 11px;border-radius:2px;opacity:0;transform:translateY(-3px);transition:opacity .3s,transform .3s;pointer-events:none;white-space:nowrap}
+.nav-date-badge.show{opacity:1;transform:none}
+.nav-links{display:flex;list-style:none;gap:0}
+.nav-links a{color:var(--ink-4);text-decoration:none;font-size:10.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;transition:color .2s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:14px;right:14px;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .25s;transform-origin:left}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-cta{background:var(--ink)!important;color:var(--cream)!important;padding:8px 18px!important;font-size:10px!important;border-radius:2px;transition:background .2s!important}
+.nav-cta::after{display:none!important}
+.nav-cta:hover{background:var(--gold)!important;color:var(--white)!important}
+.lang-select{background:transparent;border:1px solid var(--cream-3);color:var(--ink-3);font-weight:500;padding:6px 26px 6px 11px;font-family:var(--font-body);font-size:11px;letter-spacing:.03em;cursor:pointer;outline:none;appearance:none;border-radius:var(--radius);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5'%3E%3Cpath d='M0 0l4 5 4-5z' fill='%235e4e3a'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 9px center;min-width:145px;transition:border-color .2s}
+.lang-select option{background:var(--white);color:var(--ink)}
+.lang-select:focus,.lang-select:hover{border-color:var(--gold)}
+.translate-bar{position:fixed;top:58px;left:0;right:0;z-index:899;background:var(--gold-faint);border-bottom:1px solid var(--gold-pale);padding:7px 48px;font-size:11.5px;color:var(--stone-deep);display:none;align-items:center;gap:8px;letter-spacing:.04em}
+.translate-bar.show{display:flex}
+.spin{display:inline-block;animation:spin .9s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
-
+ 
 /* ── HERO ── */
-.hero{min-height:100vh;background:radial-gradient(ellipse 55% 65% at 15% 60%,rgba(45,90,64,.6) 0%,transparent 60%),radial-gradient(ellipse 45% 35% at 85% 15%,rgba(181,133,30,.12) 0%,transparent 50%),linear-gradient(150deg,#030a05 0%,#0b1e13 55%,#040b06 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:110px 24px 100px;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,rgba(174,207,186,.04) 1px,transparent 1px);background-size:32px 32px}
-.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:120px;background:linear-gradient(to bottom,transparent,var(--ivory));pointer-events:none}
-.hero-kicker{font-family:var(--font-sans);font-size:9.5px;font-weight:600;letter-spacing:.5em;text-transform:uppercase;color:rgba(174,207,186,.4);margin-bottom:40px}
-.hero-ornament{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:28px;opacity:.3}
-.hero-ornament span{width:48px;height:1px;background:var(--gold)}
-.hero-ornament em{font-family:var(--font-serif);font-size:14px;color:var(--gold);font-style:normal}
-.hero h1{font-family:var(--font-serif);font-size:clamp(52px,8vw,104px);font-weight:300;color:var(--ivory);line-height:.92;letter-spacing:-.01em;margin-bottom:10px}
-.hero h1 em{font-style:italic;color:var(--gold-mid)}
-.hero-sub{font-family:var(--font-sans);font-size:9.5px;font-weight:400;letter-spacing:.42em;text-transform:uppercase;color:rgba(174,207,186,.32);margin-bottom:60px}
-.hero-cta{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(181,133,30,.4);color:var(--gold-mid);background:transparent;padding:14px 40px;font-family:var(--font-sans);font-size:10px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;cursor:pointer;transition:all .3s;position:relative;z-index:1}
-.hero-cta:hover{background:var(--gold-mid);color:var(--forest);border-color:var(--gold-mid)}
-.hero-cta-arrow{font-size:12px;transition:transform .3s}
-.hero-cta:hover .hero-cta-arrow{transform:translateX(4px)}
-.scroll-cue{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);font-size:9px;letter-spacing:.36em;text-transform:uppercase;color:rgba(255,255,255,.15);font-family:var(--font-sans);animation:breathe 2.8s ease-in-out infinite;z-index:1}
-@keyframes breathe{0%,100%{opacity:.15}50%{opacity:.6}}
-
+.hero{min-height:100vh;background:var(--cream);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:100px 24px 80px;position:relative;overflow:hidden}
+.hero-line-top{position:absolute;top:0;left:50%;transform:translateX(-50%);width:1px;height:90px;background:linear-gradient(to bottom,transparent,var(--gold-light));pointer-events:none}
+.hero-line-bot{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:1px;height:90px;background:linear-gradient(to top,transparent,var(--stone));pointer-events:none}
+.hero-eyebrow{display:flex;align-items:center;gap:16px;margin-bottom:46px;font-size:10px;font-weight:600;letter-spacing:.44em;text-transform:uppercase;color:var(--stone-deep)}
+.hero-eyebrow-rule{width:40px;height:1px;background:var(--stone)}
+.hero-title{font-family:var(--font-display);font-size:clamp(58px,9vw,118px);font-weight:300;color:var(--ink);line-height:.88;letter-spacing:-.01em;margin-bottom:12px}
+.hero-title em{font-style:italic;color:var(--gold)}
+.hero-subtitle{font-size:10.5px;font-weight:600;letter-spacing:.4em;text-transform:uppercase;color:var(--ink-4);margin-bottom:54px}
+.hero-btn{display:inline-flex;align-items:center;gap:12px;border:1.5px solid var(--ink);color:var(--ink);background:transparent;padding:13px 38px;font-family:var(--font-body);font-size:10.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;transition:all .3s;border-radius:var(--radius);position:relative;z-index:1}
+.hero-btn:hover{background:var(--ink);color:var(--cream)}
+.hero-btn-arrow{transition:transform .3s}
+.hero-btn:hover .hero-btn-arrow{transform:translateX(5px)}
+.hero-scroll{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);font-size:9.5px;font-weight:500;letter-spacing:.36em;text-transform:uppercase;color:var(--ink-4);animation:fade-pulse 2.5s ease-in-out infinite;z-index:1}
+@keyframes fade-pulse{0%,100%{opacity:.3}50%{opacity:.75}}
+ 
 /* ── LAYOUT ── */
-.container{max-width:1020px;margin:0 auto;padding:0 32px 120px}
-
-/* ── SECTION HEADERS ── */
-.section-head{text-align:center;padding:96px 0 52px}
-.sec-kicker{display:block;font-family:var(--font-sans);font-size:9px;font-weight:600;letter-spacing:.42em;text-transform:uppercase;color:var(--sage);margin-bottom:16px}
-.sec-title{font-family:var(--font-serif);font-size:clamp(32px,5vw,52px);font-weight:300;color:var(--forest);line-height:1.08;margin-bottom:24px;letter-spacing:.01em}
-.sec-ornament{display:flex;align-items:center;justify-content:center;gap:12px;opacity:.4}
-.sec-ornament span{width:36px;height:1px;background:var(--gold);display:block}
-.sec-ornament em{font-family:var(--font-serif);font-size:11px;color:var(--gold);font-style:normal}
-
+.page{max-width:1040px;margin:0 auto;padding:0 40px 120px}
+ 
+/* ── SECTION HEADER ── */
+.s-head{text-align:center;padding:84px 0 46px}
+.s-kicker{display:block;font-size:9px;font-weight:700;letter-spacing:.5em;text-transform:uppercase;color:var(--gold);margin-bottom:13px}
+.s-title{font-family:var(--font-display);font-size:clamp(28px,4.5vw,46px);font-weight:400;color:var(--ink);line-height:1.1;margin-bottom:22px}
+.s-rule{display:flex;align-items:center;justify-content:center;gap:14px;opacity:.5}
+.s-rule span{width:32px;height:1px;background:var(--gold);display:block}
+.s-rule em{font-family:var(--font-display);font-size:12px;color:var(--gold);font-style:normal}
+ 
+/* ── DATE CONTROLS ── */
+.date-controls{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.date-input{font-family:var(--font-body);font-size:12.5px;font-weight:500;color:var(--ink);background:var(--white);border:1.5px solid var(--cream-3);padding:9px 14px;border-radius:var(--radius);cursor:pointer;outline:none;transition:border-color .2s;letter-spacing:.02em;min-width:170px}
+.date-input:focus,.date-input:hover{border-color:var(--gold)}
+.date-today-btn{font-family:var(--font-body);font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);background:transparent;border:1.5px solid var(--cream-3);padding:9px 16px;border-radius:var(--radius);cursor:pointer;transition:all .2s;white-space:nowrap}
+.date-today-btn:hover{border-color:var(--gold);color:var(--gold)}
+.date-label{font-size:11px;font-weight:500;color:var(--ink-4);letter-spacing:.08em}
+ 
 /* ── PANCHANG CHECKER ── */
-.checker-card{background:var(--forest);overflow:hidden;border:1px solid rgba(255,255,255,.04);box-shadow:0 24px 80px rgba(0,0,0,.18)}
-.checker-inner{display:grid;grid-template-columns:1fr 1.1fr}
-.ck-left{padding:52px 48px;border-right:1px solid rgba(255,255,255,.05)}
-.ck-left h3{font-family:var(--font-serif);font-size:26px;font-weight:300;font-style:italic;color:var(--ivory);margin-bottom:8px}
-.ck-left p{font-size:11.5px;font-weight:300;color:rgba(255,255,255,.28);margin-bottom:30px;line-height:1.85;letter-spacing:.03em}
-#todayResult{border:1px solid rgba(255,255,255,.06);padding:22px 26px;min-height:120px;transition:all .4s ease}
-.result-safe{border-color:rgba(122,170,138,.35)!important;background:rgba(122,170,138,.06)!important}
-.result-unsafe{border-color:rgba(180,60,60,.28)!important;background:rgba(180,60,60,.05)!important}
-.result-big{font-family:var(--font-serif);font-size:28px;font-weight:400;margin-bottom:10px;line-height:1.1}
-.result-safe .result-big{color:var(--sage-light)}
-.result-unsafe .result-big{color:#c07878}
-.result-detail{font-size:11.5px;font-weight:300;color:rgba(255,255,255,.42);line-height:1.8;letter-spacing:.02em}
-.rtag{display:inline-block;background:rgba(180,60,60,.1);color:#c07878;border:1px solid rgba(180,60,60,.18);padding:2px 10px;font-size:10px;letter-spacing:.05em;margin:2px 2px 2px 0;border-radius:2px}
-
-.ck-right{padding:52px 44px}
-.p-section-label{display:block;font-size:8.5px;font-weight:600;letter-spacing:.36em;text-transform:uppercase;color:var(--sage);margin-bottom:20px}
-.panchang-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.05)}
-.panchang-item{background:rgba(255,255,255,.02);padding:16px 18px;transition:background .2s}
-.panchang-item:hover{background:rgba(255,255,255,.04)}
-.p-lbl{display:block;font-size:8px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--sage);margin-bottom:6px}
-.p-val{font-family:var(--font-serif);font-size:17px;font-weight:400;color:var(--ivory);line-height:1.2}
-.p-sub{font-size:10px;color:rgba(255,255,255,.24);margin-top:3px;letter-spacing:.03em}
-
-/* ── QUICK REF ── */
-.quick-ref{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--ivory-3);background:var(--ivory-3);overflow:hidden;margin-bottom:2px}
-.qr-cell{background:var(--forest-mid);text-align:center;padding:30px 20px;border-right:1px solid rgba(255,255,255,.05)}
-.qr-cell:last-child{border-right:none}
-.qr-kicker{display:block;font-size:8px;font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:var(--sage);margin-bottom:10px}
-.qr-value{font-family:var(--font-serif);font-size:15px;font-weight:300;color:var(--ivory);line-height:1.6}
-
-/* ── CARDS ── */
-.card{background:white;border:1px solid var(--ivory-3);overflow:hidden;transition:transform .25s,box-shadow .25s;box-shadow:0 1px 4px rgba(8,24,15,.04)}
-.card:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(8,24,15,.08)}
-.card-stripe{height:3px}
-.stripe-red{background:linear-gradient(90deg,#6b1f1f,#a03030)}
-.stripe-blue{background:linear-gradient(90deg,var(--blue-deep),#2e5080)}
-.stripe-gold{background:linear-gradient(90deg,var(--gold),var(--gold-mid))}
-.stripe-sage{background:linear-gradient(90deg,var(--forest-mid),var(--sage))}
-.card-body{padding:30px 34px}
-.card-kicker{display:block;font-size:8.5px;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:var(--sage);margin-bottom:8px}
-.card-title{font-family:var(--font-serif);font-size:22px;font-weight:400;color:var(--forest);margin-bottom:20px;line-height:1.2}
-.tags{display:flex;flex-wrap:wrap;gap:8px}
-.tag{padding:5px 14px;font-size:11.5px;font-weight:400;letter-spacing:.03em;border-radius:2px}
-.t-red{background:var(--red-pale);color:var(--red-deep);border:1px solid rgba(74,21,21,.1)}
-.t-blue{background:var(--blue-pale);color:var(--blue-deep);border:1px solid rgba(22,37,64,.1)}
-.card-note{font-size:11.5px;color:var(--ink-faint);margin-top:16px;line-height:1.7;font-style:italic;letter-spacing:.02em}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-bottom:2px}
-
-/* ── TIME SLOTS ── */
-.tgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.tslot{background:var(--red-pale);border:1px solid rgba(74,21,21,.07);padding:16px 18px;display:flex;align-items:flex-start;gap:10px;border-radius:2px}
-.tslot-x{font-size:9px;font-weight:700;letter-spacing:.06em;color:var(--red-deep);flex-shrink:0;margin-top:4px}
-.tslot-txt strong{display:block;font-size:12px;font-weight:600;color:var(--red-deep);margin-bottom:2px;letter-spacing:.02em}
-.tslot-txt span{font-size:10.5px;color:rgba(74,21,21,.5);line-height:1.5}
-.ideal-box{background:#f0f7f3;border:1px solid rgba(45,90,64,.14);padding:16px 18px;margin-top:14px;display:flex;align-items:flex-start;gap:10px;font-size:12.5px;color:var(--forest-mid);line-height:1.7;border-radius:2px}
-.ideal-check{color:var(--forest-light);font-size:14px;flex-shrink:0;margin-top:2px}
-
-/* ── ETIQUETTE ── */
-.etq-list{list-style:none}
-.etq-item{display:flex;align-items:flex-start;gap:18px;padding:18px 0;border-bottom:1px solid var(--ivory-2);font-size:13px;color:var(--ink-mid);line-height:1.75;letter-spacing:.02em}
-.etq-item:last-child{border-bottom:none;padding-bottom:0}
-.etq-num{font-family:var(--font-serif);font-size:17px;font-weight:400;font-style:italic;color:var(--sage);flex-shrink:0;min-width:22px;padding-top:1px}
-.etq-hl{background:#f5f9f6;border:1px solid rgba(45,90,64,.1);padding:24px 26px;margin:4px 0;flex:1;border-radius:2px}
-.tech-heading{font-family:var(--font-serif);font-size:18px;font-weight:500;color:var(--forest);margin-bottom:4px;display:block}
-.tech-sub{font-size:11.5px;color:var(--ink-faint);font-style:italic;margin-bottom:18px;display:block;letter-spacing:.02em}
-.tech-hands{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:16px}
-.tech-hand{flex:1;min-width:140px;background:white;border:1px solid var(--ivory-3);padding:16px 18px;border-radius:2px}
-.tech-hand-lbl{display:block;font-size:8.5px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--sage);margin-bottom:7px}
-.tech-hand-txt{font-size:12px;color:var(--ink-mid);line-height:1.65}
-.tulasi-img-row{display:flex;align-items:center;gap:18px;background:white;border:1px solid var(--ivory-3);padding:16px 18px;border-radius:2px}
-.tulasi-img-row img{width:88px;height:88px;object-fit:cover;flex-shrink:0;border-radius:2px;filter:saturate(.88)}
-.tulasi-img-caption{font-size:11.5px;color:var(--ink-soft);line-height:1.65}
-.tulasi-img-caption strong{font-family:var(--font-serif);font-size:15px;font-weight:500;color:var(--forest);display:block;margin-bottom:4px}
-
-/* ── MANTRA CARD ── */
-.mantra-card{background:var(--forest);padding:64px 68px;position:relative;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.03)}
-.mantra-card::before{content:"ॐ";position:absolute;right:48px;top:20px;font-family:var(--font-deva);font-size:180px;opacity:.025;color:var(--gold-mid);line-height:1;pointer-events:none}
-.mantra-kicker{display:block;font-size:9px;font-weight:600;letter-spacing:.4em;text-transform:uppercase;color:var(--sage);margin-bottom:40px}
-.mantra-sa{font-family:var(--font-deva);font-weight:300;font-size:clamp(16px,2.6vw,22px);color:var(--gold-light);line-height:2.3;margin-bottom:28px;padding:24px 30px;border-left:2px solid rgba(181,133,30,.35);background:rgba(255,255,255,.02)}
-.mantra-roman{font-family:var(--font-serif);font-style:italic;font-weight:300;font-size:15px;color:rgba(255,255,255,.32);line-height:2.1;margin-bottom:26px;letter-spacing:.04em}
-.mantra-meaning{background:rgba(122,170,138,.07);border:1px solid rgba(122,170,138,.14);padding:20px 26px;font-size:13px;font-weight:300;color:var(--sage-light);line-height:1.85;font-style:italic;letter-spacing:.03em;border-radius:2px}
-.mantra-meaning strong{color:var(--sage-pale);font-style:normal;font-weight:500}
-
+.checker{background:var(--white);border:1px solid var(--cream-3);box-shadow:var(--shadow-lg);overflow:hidden}
+.checker-layout{display:grid;grid-template-columns:1fr 1.15fr}
+.ck-left{padding:48px 44px;border-right:1px solid var(--cream-3);display:flex;flex-direction:column}
+.ck-left-head{font-family:var(--font-display);font-size:24px;font-weight:500;color:var(--ink);margin-bottom:5px}
+.ck-left-desc{font-size:12.5px;font-weight:400;color:var(--ink-4);line-height:1.75;margin-bottom:22px}
+.result-box{border:1.5px solid var(--cream-3);padding:22px 24px;flex:1;min-height:130px;transition:all .35s ease;border-radius:var(--radius)}
+.result-box.safe{border-color:var(--safe-border);background:var(--safe-bg)}
+.result-box.restrict{border-color:var(--restrict-border);background:var(--restrict-bg)}
+.result-headline{font-family:var(--font-display);font-size:25px;font-weight:600;margin-bottom:10px;line-height:1.1}
+.result-box.safe .result-headline{color:var(--safe-text)}
+.result-box.restrict .result-headline{color:var(--restrict-text)}
+.result-body{font-size:12.5px;font-weight:400;line-height:1.85;color:var(--ink-3)}
+.result-body strong{color:var(--ink);font-weight:600}
+.rtag{display:inline-block;padding:3px 10px;background:var(--restrict-bg);color:var(--restrict-text);border:1.5px solid rgba(184,96,80,.3);font-size:10.5px;font-weight:600;letter-spacing:.04em;border-radius:2px;margin:2px 2px 2px 0}
+/* Dashami callout */
+.dashami-callout{background:var(--dashami-bg);border:1.5px solid var(--dashami-border);border-radius:var(--radius);padding:14px 18px;margin-top:12px;display:flex;gap:10px;align-items:flex-start;font-size:12.5px;color:var(--dashami-text);font-weight:500;line-height:1.7}
+.dashami-icon{font-size:15px;flex-shrink:0;margin-top:1px}
+ 
+.ck-right{padding:44px 40px;background:var(--cream-2)}
+.p-top-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.p-label{display:block;font-size:8.5px;font-weight:700;letter-spacing:.4em;text-transform:uppercase;color:var(--stone-deep)}
+.panchang-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--cream-3);border:1px solid var(--cream-3)}
+.p-cell{background:var(--white);padding:14px 16px;transition:background .2s}
+.p-cell:hover{background:var(--cream)}
+.p-cell-label{display:block;font-size:8px;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:var(--stone-deep);margin-bottom:5px}
+.p-cell-val{font-family:var(--font-display);font-size:18px;font-weight:500;color:var(--ink);line-height:1.2}
+.p-cell-sub{font-size:10.5px;font-weight:500;color:var(--ink-4);margin-top:2px;letter-spacing:.02em}
+.p-cell-deity{font-size:10px;font-weight:600;color:var(--stone-deep);margin-top:3px;letter-spacing:.03em;font-style:italic}
+/* status colours for yoga/karana cells */
+.val-bad{color:var(--restrict-text)!important}
+.sub-bad{color:var(--restrict-text)!important}
+.sub-good{color:var(--safe-text)!important}
+ 
+/* ── QUICK SUMMARY ── */
+.summary-strip{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--cream-3);margin-top:2px;background:var(--cream-3);overflow:hidden}
+.sum-cell{background:var(--ink-2);padding:24px 16px;text-align:center;border-right:1px solid rgba(255,255,255,.06)}
+.sum-cell:last-child{border-right:none}
+.sum-kicker{display:block;font-size:8px;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:var(--stone);margin-bottom:8px}
+.sum-val{font-family:var(--font-display);font-size:15px;font-weight:400;color:rgba(250,248,244,.92);line-height:1.55}
+ 
+/* ── RULE CARDS ── */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:2px}
+.rule-card{background:var(--white);border:1px solid var(--cream-3);overflow:hidden;transition:box-shadow .25s;box-shadow:var(--shadow-sm)}
+.rule-card:hover{box-shadow:var(--shadow-md)}
+.rule-stripe{height:2px}
+.stripe-restrict{background:linear-gradient(90deg,#7a2020,#b84040)}
+.stripe-note{background:linear-gradient(90deg,#5e4a30,#906830)}
+.stripe-gold{background:linear-gradient(90deg,var(--gold),var(--gold-light))}
+.rule-body{padding:26px 30px}
+.rule-kicker{display:block;font-size:8px;font-weight:700;letter-spacing:.38em;text-transform:uppercase;color:var(--stone-deep);margin-bottom:6px}
+.rule-title{font-family:var(--font-display);font-size:20px;font-weight:500;color:var(--ink);margin-bottom:15px;line-height:1.2}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{padding:5px 13px;font-size:11.5px;font-weight:500;border-radius:2px;letter-spacing:.02em}
+.t-restrict{background:var(--restrict-bg);color:var(--restrict-text);border:1px solid rgba(184,96,80,.25)}
+.t-note{background:var(--warn-bg);color:var(--warn-text);border:1px solid rgba(200,152,64,.25)}
+.rule-note{font-size:12.5px;font-weight:400;color:var(--ink-4);margin-top:14px;line-height:1.7;font-style:italic}
+ 
+/* ── TIME CARD ── */
+.time-card{background:var(--white);border:1px solid var(--cream-3);margin-top:2px;box-shadow:var(--shadow-sm);overflow:hidden}
+.time-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.time-slot{background:var(--restrict-bg);border:1px solid rgba(184,96,80,.2);padding:15px 17px;display:flex;align-items:flex-start;gap:10px;border-radius:2px}
+.time-slot-x{font-size:10px;font-weight:700;color:var(--restrict-text);flex-shrink:0;padding-top:3px;letter-spacing:.04em}
+.time-slot-name{display:block;font-size:12.5px;font-weight:600;color:var(--restrict-text);margin-bottom:2px}
+.time-slot-desc{font-size:11px;font-weight:400;color:var(--ink-4);line-height:1.5}
+.time-ideal{background:var(--safe-bg);border:1px solid rgba(90,148,112,.28);padding:15px 17px;margin-top:12px;display:flex;align-items:flex-start;gap:10px;font-size:12.5px;font-weight:500;color:var(--safe-text);line-height:1.7;border-radius:2px}
+.time-ideal-check{color:var(--safe-text);font-size:14px;flex-shrink:0;margin-top:2px}
+ 
+/* ── CONDUCT ── */
+.conduct-list{list-style:none}
+.conduct-item{display:flex;align-items:flex-start;gap:20px;padding:18px 0;border-bottom:1px solid var(--cream-2);font-size:13px;font-weight:400;color:var(--ink-3);line-height:1.75}
+.conduct-item:last-child{border-bottom:none;padding-bottom:0}
+.conduct-num{font-family:var(--font-display);font-size:16px;font-weight:400;font-style:italic;color:var(--stone-mid);flex-shrink:0;min-width:20px;padding-top:1px}
+.technique-box{background:var(--cream);border:1px solid var(--cream-3);padding:22px 24px;flex:1;border-radius:var(--radius)}
+.tech-title{font-family:var(--font-display);font-size:18px;font-weight:500;color:var(--ink);display:block;margin-bottom:3px}
+.tech-subtitle{font-size:11.5px;font-weight:400;color:var(--ink-4);font-style:italic;display:block;margin-bottom:16px;letter-spacing:.02em}
+.tech-hands{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.tech-hand{flex:1;min-width:140px;background:var(--white);border:1px solid var(--cream-3);padding:14px 16px;border-radius:2px}
+.tech-hand-label{display:block;font-size:8.5px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.tech-hand-text{font-size:12.5px;font-weight:400;color:var(--ink-3);line-height:1.6}
+.tulasi-callout{display:flex;align-items:center;gap:16px;background:var(--white);border:1px solid var(--cream-3);padding:14px 16px;border-radius:2px}
+.tulasi-callout img{width:90px;height:80px;object-fit:contain;flex-shrink:0;border-radius:2px;background:white}
+.tulasi-callout-text{font-size:12.5px;font-weight:400;color:var(--ink-3);line-height:1.65}
+.tulasi-callout-text strong{font-family:var(--font-display);font-size:15px;font-weight:500;color:var(--ink);display:block;margin-bottom:4px}
+ 
+/* ── MANTRA ── */
+.mantra-card{background:var(--ink);position:relative;overflow:hidden;padding:58px 64px;box-shadow:var(--shadow-lg)}
+.mantra-card::before{content:"ॐ";position:absolute;right:40px;top:10px;font-family:var(--font-deva);font-size:200px;opacity:.028;color:var(--gold);line-height:1;pointer-events:none}
+.mantra-eyebrow{display:block;font-size:9px;font-weight:700;letter-spacing:.44em;text-transform:uppercase;color:var(--stone);margin-bottom:38px}
+.mantra-devanagari{font-family:var(--font-deva);font-size:clamp(15px,2.2vw,20px);color:var(--gold-light);line-height:2.4;margin-bottom:24px;padding:22px 28px;border-left:2px solid rgba(184,145,42,.4);background:rgba(255,255,255,.03)}
+.mantra-roman{font-family:var(--font-display);font-style:italic;font-weight:300;font-size:15px;color:rgba(250,248,244,.45);line-height:2.1;margin-bottom:24px;letter-spacing:.04em}
+.mantra-meaning{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);padding:20px 26px;font-size:13px;font-weight:400;color:rgba(250,248,244,.72);line-height:1.85;font-style:italic;letter-spacing:.02em;border-radius:var(--radius)}
+.mantra-meaning strong{color:rgba(250,248,244,.92);font-style:normal;font-weight:600}
+ 
 /* ── EXCEPTION ── */
-.exc-card{background:var(--gold-faint);border:1px solid rgba(181,133,30,.2);padding:52px 60px;position:relative;overflow:hidden}
-.exc-card::after{content:"✦";position:absolute;right:50px;top:50%;transform:translateY(-50%);font-size:130px;opacity:.03;color:var(--gold);pointer-events:none}
-.exc-kicker{display:block;font-size:9px;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
-.exc-title{font-family:var(--font-serif);font-size:28px;font-weight:300;color:var(--ink);margin-bottom:34px;line-height:1.2}
-.exc-list{display:flex;flex-direction:column;gap:18px}
-.exc-item{display:flex;align-items:flex-start;gap:14px;font-size:13px;font-weight:300;color:var(--ink-mid);line-height:1.75;letter-spacing:.02em}
-.exc-bullet{width:5px;height:5px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:9px}
-
+.exception-card{background:var(--gold-faint);border:1px solid var(--gold-pale);padding:50px 54px;position:relative;overflow:hidden}
+.exception-card::after{content:"✦";position:absolute;right:44px;top:50%;transform:translateY(-50%);font-size:140px;opacity:.04;color:var(--gold);pointer-events:none;line-height:1}
+.exception-eyebrow{display:block;font-size:9px;font-weight:700;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);margin-bottom:11px}
+.exception-title{font-family:var(--font-display);font-size:26px;font-weight:500;color:var(--ink);margin-bottom:30px;line-height:1.25}
+.exception-items{display:flex;flex-direction:column;gap:15px}
+.exception-item{display:flex;align-items:flex-start;gap:13px;font-size:13px;font-weight:400;color:var(--ink-3);line-height:1.75}
+.exception-dot{width:4px;height:4px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:10px}
+ 
 /* ── DIVIDER ── */
-.section-divider{width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--ivory-3),transparent);margin:0}
-
+.hr{width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--cream-3),transparent)}
+ 
 /* ── FOOTER ── */
-footer{background:var(--forest-deep);color:rgba(255,255,255,.22);text-align:center;padding:64px 24px;font-size:11.5px;font-weight:300;letter-spacing:.06em;line-height:2.2}
-footer .f-ornament{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:28px;opacity:.3}
-footer .f-ornament span{width:40px;height:1px;background:var(--gold);display:block}
-footer .f-ornament em{font-family:var(--font-serif);font-size:12px;color:var(--gold);font-style:normal}
-footer a{color:var(--sage);text-decoration:none}
-
-/* ── FADE UP ── */
-.fade-up{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
-.fade-up.visible{opacity:1;transform:none}
-
+footer{background:var(--ink-2);padding:58px 24px;text-align:center;font-size:12px;font-weight:400;color:rgba(250,248,244,.45);line-height:2.2;letter-spacing:.04em}
+.footer-ornament{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:22px;opacity:.35}
+.footer-ornament span{width:36px;height:1px;background:var(--gold);display:block}
+.footer-ornament em{font-family:var(--font-display);font-size:13px;color:var(--gold);font-style:normal}
+ 
+/* ── FADE ── */
+.fade-up{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.fade-up.in{opacity:1;transform:none}
+ 
 /* ── RESPONSIVE ── */
-@media(max-width:760px){
+@media(max-width:768px){
   nav{padding:0 18px}
   .nav-links{display:none}
-  .checker-inner{grid-template-columns:1fr}
-  .ck-left{padding:30px 24px;border-right:none;border-bottom:1px solid rgba(255,255,255,.05)}
-  .ck-right{padding:30px 24px}
-  .grid2{grid-template-columns:1fr}
-  .quick-ref{grid-template-columns:1fr 1fr}
-  .tgrid{grid-template-columns:1fr}
-  .tulasi-img-row{flex-direction:column;text-align:center}
-  .mantra-card{padding:36px 26px}
-  .exc-card{padding:34px 26px}
-  .container{padding:0 20px 80px}
+  .checker-layout{grid-template-columns:1fr}
+  .ck-left{padding:26px 20px;border-right:none;border-bottom:1px solid var(--cream-3)}
+  .ck-right{padding:26px 20px}
+  .two-col{grid-template-columns:1fr}
+  .summary-strip{grid-template-columns:1fr 1fr}
+  .time-grid{grid-template-columns:1fr}
+  .mantra-card{padding:34px 22px}
+  .exception-card{padding:34px 22px}
+  .page{padding:0 16px 80px}
+  .tulasi-callout{flex-direction:column}
+  .date-controls{flex-wrap:wrap}
 }
 </style>
 </head>
 <body>
-
+ 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="#hero"><span class="nav-logo-dot"></span>Tulasi Portal</a>
+  <div class="nav-left">
+    <a class="nav-brand" href="#hero">
+      <div class="nav-brand-mark">✦</div>
+      Tulasi Portal
+    </a>
+    <div class="nav-date-badge" id="navDateBadge"></div>
+  </div>
   <ul class="nav-links">
-    <li><a href="#today" class="nav-today">Today's Check</a></li>
+    <li><a href="#today" class="nav-cta">Today's Check</a></li>
     <li><a href="#rules">Guidelines</a></li>
     <li><a href="#mantra">Mantra</a></li>
     <li><a href="#exception">Exception</a></li>
   </ul>
-  <div class="translate-wrap">
-    <select class="translate-select" id="langSelect" onchange="translatePage(this.value)">
-      <option value="">🌐 Translate…</option>
-      <option value="hi">हिंदी</option>
-      <option value="kn">ಕನ್ನಡ</option>
-      <option value="te">తెలుగు</option>
-      <option value="ta">தமிழ்</option>
-      <option value="mr">मराठी</option>
-      <option value="bn">বাংলা</option>
-      <option value="gu">ગુજરાતી</option>
-      <option value="ml">മലയാളം</option>
-      <option value="de">Deutsch</option>
-      <option value="fr">Français</option>
-      <option value="es">Español</option>
-      <option value="ja">日本語</option>
-      <option value="en">English (reset)</option>
-    </select>
-  </div>
+  <select class="lang-select" id="langSelect" onchange="translatePage(this.value)">
+    <option value="">🌐 Translate…</option>
+    <option value="hi">हिंदी</option>
+    <option value="kn">ಕನ್ನಡ</option>
+    <option value="te">తెలుగు</option>
+    <option value="ta">தமிழ்</option>
+    <option value="mr">मराठी</option>
+    <option value="bn">বাংলা</option>
+    <option value="gu">ગુજરાતી</option>
+    <option value="ml">മലയാളം</option>
+    <option value="de">Deutsch</option>
+    <option value="fr">Français</option>
+    <option value="es">Español</option>
+    <option value="ja">日本語</option>
+    <option value="en">English (reset)</option>
+  </select>
 </nav>
-
-<div id="translateStatus" class="translate-status"></div>
-
+<div id="translateBar" class="translate-bar"></div>
+ 
 <!-- HERO -->
 <section class="hero" id="hero">
-  <p class="hero-kicker">Madhwa Sampradaya · Vishnu Devotion</p>
-  <div class="hero-ornament"><span></span><em>✦</em><span></span></div>
-  <h1>Tulasi <em>Devotion</em><br>Portal</h1>
-  <p class="hero-sub">Sacred Guidelines for Worship</p>
-  <button class="hero-cta" onclick="document.getElementById('today').scrollIntoView({behavior:'smooth'})">
-    Is Today Safe to Pluck? <span class="hero-cta-arrow">→</span>
+  <div class="hero-line-top"></div>
+  <div class="hero-line-bot"></div>
+  <div class="hero-eyebrow">
+    <div class="hero-eyebrow-rule"></div>
+    Madhwa Sampradaya · Vishnu Devotion
+    <div class="hero-eyebrow-rule"></div>
+  </div>
+  <h1 class="hero-title">Tulasi<br><em>Devotion</em><br>Portal</h1>
+  <p class="hero-subtitle">Sacred Guidelines for Worship</p>
+  <button class="hero-btn" onclick="document.getElementById('today').scrollIntoView({behavior:'smooth'})">
+    Is Today Safe to Pluck? <span class="hero-btn-arrow">→</span>
   </button>
-  <div class="scroll-cue">↓ &nbsp; scroll</div>
+  <div class="hero-scroll">↓ &nbsp; scroll</div>
 </section>
-
-<div class="container">
-
+ 
+<div class="page">
+ 
 <!-- ── SECTION 1: TODAY ── -->
-<div class="section-head fade-up" id="today">
-  <span class="sec-kicker" id="lbl1">Step 1 — Check First</span>
-  <h2 class="sec-title" id="ttl1">Is Today Auspicious<br>for Plucking?</h2>
-  <div class="sec-ornament"><span></span><em>✦</em><span></span></div>
+<div class="s-head fade-up" id="today">
+  <span class="s-kicker" id="lbl1">Step 1 — Check First</span>
+  <h2 class="s-title" id="ttl1">Is This Date Auspicious<br>for Plucking?</h2>
+  <div class="s-rule"><span></span><em>✦</em><span></span></div>
 </div>
-
-<div class="checker-card fade-up">
-  <div class="checker-inner">
+ 
+<div class="checker fade-up">
+  <div class="checker-layout">
     <div class="ck-left">
-      <h3 id="todayH3">Today's Tulasi Check</h3>
-      <p id="todayDesc">Based on today's weekday, lunar tithi, yoga and karana — see if Tulasi leaves may be plucked today.</p>
-      <div id="todayResult">
-        <div style="color:rgba(255,255,255,.18);font-size:13px;font-style:italic;padding:8px 0">Calculating…</div>
+      <div class="ck-left-head" id="todayH3">Tulasi Plucking Check</div>
+      <p class="ck-left-desc" id="todayDesc">Select any date to see if Tulasi leaves may be plucked — based on weekday, lunar tithi, yoga and karana.</p>
+      <!-- Date controls -->
+      <div class="date-controls">
+        <input type="date" class="date-input" id="datePickerInput" oninput="onDateChange(this.value)">
+        <button class="date-today-btn" onclick="resetToToday()">↺ Today</button>
       </div>
+      <div id="todayResult" class="result-box">
+        <div style="color:var(--ink-5);font-size:13px;font-style:italic;padding:6px 0">Calculating…</div>
+      </div>
+      <div id="dashamiCallout" style="display:none"></div>
     </div>
     <div class="ck-right">
-      <span class="p-section-label">Today's Panchang</span>
+      <div class="p-top-bar">
+        <span class="p-label">Panchang Details</span>
+      </div>
       <div class="panchang-grid">
-        <div class="panchang-item"><span class="p-lbl">Weekday</span><div class="p-val" id="p-weekday">—</div></div>
-        <div class="panchang-item"><span class="p-lbl">Date</span><div class="p-val" id="p-date">—</div></div>
-        <div class="panchang-item"><span class="p-lbl">Lunar Tithi</span><div class="p-val" id="p-tithi">—</div><div class="p-sub" id="p-tithi-sub"></div></div>
-        <div class="panchang-item"><span class="p-lbl">Paksha</span><div class="p-val" id="p-paksha">—</div></div>
-        <div class="panchang-item"><span class="p-lbl">Yoga</span><div class="p-val" id="p-yoga">—</div><div class="p-sub" id="p-yoga-sub"></div></div>
-        <div class="panchang-item"><span class="p-lbl">Karana</span><div class="p-val" id="p-karana">—</div><div class="p-sub" id="p-karana-sub"></div></div>
-        <div class="panchang-item"><span class="p-lbl">🌅 Sunrise</span><div class="p-val" id="p-sunrise" style="font-size:15px">—</div><div class="p-sub" id="p-sunrise-sub"></div></div>
-        <div class="panchang-item"><span class="p-lbl">🌇 Sunset</span><div class="p-val" id="p-sunset" style="font-size:15px">—</div><div class="p-sub" id="p-sunset-sub"></div></div>
-        <div class="panchang-item" style="grid-column:span 2">
-          <span class="p-lbl">Plucking Window</span>
-          <div class="p-val" id="p-window">—</div>
-          <div class="p-sub">After sunrise · After bathing</div>
+        <div class="p-cell"><span class="p-cell-label">Weekday</span><div class="p-cell-val" id="p-weekday">—</div><div class="p-cell-deity" id="p-deity"></div></div>
+        <div class="p-cell"><span class="p-cell-label">Date</span><div class="p-cell-val" id="p-date" style="font-size:15px">—</div></div>
+        <div class="p-cell"><span class="p-cell-label">Lunar Tithi</span><div class="p-cell-val" id="p-tithi">—</div><div class="p-cell-sub" id="p-tithi-sub"></div></div>
+        <div class="p-cell"><span class="p-cell-label">Paksha</span><div class="p-cell-val" id="p-paksha">—</div></div>
+        <div class="p-cell"><span class="p-cell-label">Yoga</span><div class="p-cell-val" id="p-yoga">—</div><div class="p-cell-sub" id="p-yoga-sub"></div></div>
+        <div class="p-cell"><span class="p-cell-label">Karana</span><div class="p-cell-val" id="p-karana">—</div><div class="p-cell-sub" id="p-karana-sub"></div></div>
+        <div class="p-cell"><span class="p-cell-label">Nakshatra</span><div class="p-cell-val" id="p-nakshatra">—</div><div class="p-cell-sub" id="p-nakshatra-sub"></div></div>
+        <div class="p-cell"><span class="p-cell-label">Masa (Month)</span><div class="p-cell-val" id="p-masa">—</div><div class="p-cell-sub" id="p-masa-sub"></div></div>
+        <div class="p-cell"><span class="p-cell-label">🌅 Sunrise</span><div class="p-cell-val" id="p-sunrise" style="font-size:15px">—</div><div class="p-cell-sub" id="p-sunrise-sub"></div></div>
+        <div class="p-cell"><span class="p-cell-label">🌇 Sunset</span><div class="p-cell-val" id="p-sunset" style="font-size:15px">—</div><div class="p-cell-sub" id="p-sunset-sub"></div></div>
+        <div class="p-cell" style="grid-column:span 2">
+          <span class="p-cell-label">Plucking Window</span>
+          <div class="p-cell-val" id="p-window">—</div>
+          <div class="p-cell-sub">After sunrise · After bathing</div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<div class="section-divider" style="margin:2px 0 0"></div>
-
+ 
+<div class="hr" style="margin:2px 0 0"></div>
+ 
 <!-- ── SECTION 2: RULES ── -->
-<div class="section-head fade-up" id="rules">
-  <span class="sec-kicker" id="lbl2">Step 2 — Know the Rules</span>
-  <h2 class="sec-title" id="ttl2">Complete Plucking Guidelines</h2>
-  <div class="sec-ornament"><span></span><em>✦</em><span></span></div>
+<div class="s-head fade-up" id="rules">
+  <span class="s-kicker" id="lbl2">Step 2 — Know the Rules</span>
+  <h2 class="s-title" id="ttl2">Complete Plucking Guidelines</h2>
+  <div class="s-rule"><span></span><em>✦</em><span></span></div>
 </div>
-
-<div class="quick-ref fade-up">
-  <div class="qr-cell"><span class="qr-kicker">Avoid Days</span><div class="qr-value">Tue · Fri · Sun</div></div>
-  <div class="qr-cell"><span class="qr-kicker">Avoid Tithis</span><div class="qr-value">Ekadashi · Dwadashi<br>Amavasya · Purnima</div></div>
-  <div class="qr-cell"><span class="qr-kicker">Best Time</span><div class="qr-value">Early morning<br>after sunrise &amp; bath</div></div>
-  <div class="qr-cell"><span class="qr-kicker">Always Allowed</span><div class="qr-value">Saligrama &amp;<br>Vishnu worship</div></div>
+ 
+<div class="summary-strip fade-up">
+  <div class="sum-cell"><span class="sum-kicker">Avoid Days</span><div class="sum-val">Tue · Fri · Sun</div></div>
+  <div class="sum-cell"><span class="sum-kicker">Avoid Tithis</span><div class="sum-val">Ekadashi · Dwadashi<br>Amavasya · Purnima</div></div>
+  <div class="sum-cell"><span class="sum-kicker">Best Time</span><div class="sum-val">Early morning<br>after sunrise &amp; bath</div></div>
+  <div class="sum-cell"><span class="sum-kicker">Always Allowed</span><div class="sum-val">Saligrama &amp;<br>Vishnu worship</div></div>
 </div>
-
-<div class="grid2" style="margin-top:2px">
-  <div class="card fade-up">
-    <div class="card-stripe stripe-red"></div>
-    <div class="card-body">
-      <span class="card-kicker">Rule 01</span>
-      <div class="card-title">Days to Avoid</div>
-      <div class="tags">
-        <span class="tag t-red">Tuesday</span>
-        <span class="tag t-red">Friday</span>
-        <span class="tag t-red">Sunday</span>
-      </div>
+ 
+<div class="two-col" style="margin-top:2px">
+  <div class="rule-card fade-up">
+    <div class="rule-stripe stripe-restrict"></div>
+    <div class="rule-body">
+      <span class="rule-kicker">Rule 01</span>
+      <div class="rule-title">Days to Avoid</div>
+      <div class="tags"><span class="tag t-restrict">Tuesday</span><span class="tag t-restrict">Friday</span><span class="tag t-restrict">Sunday</span></div>
     </div>
   </div>
-  <div class="card fade-up">
-    <div class="card-stripe stripe-red"></div>
-    <div class="card-body">
-      <span class="card-kicker">Rule 02</span>
-      <div class="card-title">Lunar Tithis to Avoid</div>
-      <div class="tags">
-        <span class="tag t-red">Ekadashi</span>
-        <span class="tag t-red">Dwadashi</span>
-        <span class="tag t-red">Amavasya</span>
-        <span class="tag t-red">Purnima</span>
-      </div>
-      <p class="card-note">Collect leaves on Dashami — the day before Ekadashi — for next-day worship.</p>
+  <div class="rule-card fade-up">
+    <div class="rule-stripe stripe-restrict"></div>
+    <div class="rule-body">
+      <span class="rule-kicker">Rule 02</span>
+      <div class="rule-title">Lunar Tithis to Avoid</div>
+      <div class="tags"><span class="tag t-restrict">Ekadashi</span><span class="tag t-restrict">Dwadashi</span><span class="tag t-restrict">Amavasya</span><span class="tag t-restrict">Purnima</span></div>
+      <p class="rule-note">Collect leaves on Dashami — the day before Ekadashi — for next-day worship.</p>
     </div>
   </div>
 </div>
-
-<div class="grid2" style="margin-top:2px">
-  <div class="card fade-up">
-    <div class="card-stripe stripe-blue"></div>
-    <div class="card-body">
-      <span class="card-kicker">Rule 03</span>
-      <div class="card-title">Astrological Yogas to Avoid</div>
-      <div class="tags">
-        <span class="tag t-blue">Vaidhriti Yoga</span>
-        <span class="tag t-blue">Vyatipata Yoga</span>
-      </div>
-      <p class="card-note">Verify in your local Panchang — these inauspicious yogas occur several times monthly.</p>
+ 
+<div class="two-col" style="margin-top:2px">
+  <div class="rule-card fade-up">
+    <div class="rule-stripe stripe-note"></div>
+    <div class="rule-body">
+      <span class="rule-kicker">Rule 03</span>
+      <div class="rule-title">Astrological Yogas to Avoid</div>
+      <div class="tags"><span class="tag t-note">Vaidhriti Yoga</span><span class="tag t-note">Vyatipata Yoga</span></div>
+      <p class="rule-note">Verify in your local Panchang — these inauspicious yogas occur several times monthly.</p>
     </div>
   </div>
-  <div class="card fade-up">
-    <div class="card-stripe stripe-red"></div>
-    <div class="card-body">
-      <span class="card-kicker">Rule 04</span>
-      <div class="card-title">Special Situations</div>
-      <div class="tags">
-        <span class="tag t-red">Sankranti</span>
-        <span class="tag t-red">Solar Eclipse</span>
-        <span class="tag t-red">Lunar Eclipse</span>
-        <span class="tag t-red">Janana Ashaucha</span>
-        <span class="tag t-red">Marana Ashaucha</span>
-      </div>
+  <div class="rule-card fade-up">
+    <div class="rule-stripe stripe-restrict"></div>
+    <div class="rule-body">
+      <span class="rule-kicker">Rule 04</span>
+      <div class="rule-title">Special Situations</div>
+      <div class="tags"><span class="tag t-restrict">Sankranti</span><span class="tag t-restrict">Solar Eclipse</span><span class="tag t-restrict">Lunar Eclipse</span><span class="tag t-restrict">Janana Ashaucha</span><span class="tag t-restrict">Marana Ashaucha</span></div>
     </div>
   </div>
 </div>
-
-<div class="card fade-up" style="margin-top:2px">
-  <div class="card-stripe stripe-sage"></div>
-  <div class="card-body">
-    <span class="card-kicker">Rule 05</span>
-    <div class="card-title" style="margin-bottom:20px">Time of Day Restrictions</div>
-    <div class="tgrid">
-      <div class="tslot"><span class="tslot-x">✕</span><div class="tslot-txt"><strong>Before Sunrise</strong><span>Plucking in darkness is not permitted</span></div></div>
-      <div class="tslot"><span class="tslot-x">✕</span><div class="tslot-txt"><strong>Madhyahna Sandhya</strong><span>Avoid during the midday prayer period</span></div></div>
-      <div class="tslot"><span class="tslot-x">✕</span><div class="tslot-txt"><strong>Evening Sandhya</strong><span>Tulasi rests during the dusk prayer time</span></div></div>
-      <div class="tslot"><span class="tslot-x">✕</span><div class="tslot-txt"><strong>Night (after sunset)</strong><span>Tulasi should not be disturbed at night</span></div></div>
+ 
+<div class="time-card fade-up" style="margin-top:2px">
+  <div class="rule-stripe stripe-note"></div>
+  <div class="rule-body">
+    <span class="rule-kicker">Rule 05</span>
+    <div class="rule-title" style="margin-bottom:18px">Time of Day Restrictions</div>
+    <div class="time-grid">
+      <div class="time-slot"><span class="time-slot-x">✕</span><div><strong class="time-slot-name">Before Sunrise</strong><span class="time-slot-desc">Plucking in darkness is not permitted</span></div></div>
+      <div class="time-slot"><span class="time-slot-x">✕</span><div><strong class="time-slot-name">Madhyahna Sandhya</strong><span class="time-slot-desc">Avoid during the midday prayer period</span></div></div>
+      <div class="time-slot"><span class="time-slot-x">✕</span><div><strong class="time-slot-name">Evening Sandhya</strong><span class="time-slot-desc">Tulasi rests during the dusk prayer time</span></div></div>
+      <div class="time-slot"><span class="time-slot-x">✕</span><div><strong class="time-slot-name">Night (after sunset)</strong><span class="time-slot-desc">Tulasi should not be disturbed at night</span></div></div>
     </div>
-    <div class="ideal-box">
-      <span class="ideal-check">✓</span>
-      <div><strong style="font-weight:600">Ideal Time:</strong> Early morning after sunrise, following a bath. Brahma Muhurta through mid-morning is most auspicious.</div>
+    <div class="time-ideal">
+      <span class="time-ideal-check">✓</span>
+      <div><strong>Ideal Time:</strong> Early morning after sunrise, following a bath. Brahma Muhurta through mid-morning is most auspicious.</div>
     </div>
   </div>
 </div>
-
-<div class="card fade-up" style="margin-top:2px">
-  <div class="card-stripe stripe-gold"></div>
-  <div class="card-body">
-    <span class="card-kicker">Sacred Conduct</span>
-    <div class="card-title" style="margin-bottom:20px">While Plucking Tulasi</div>
-    <ul class="etq-list">
-      <li class="etq-item"><span class="etq-num">1</span><span>Bathe or wash hands and body before approaching the Tulasi plant</span></li>
-      <li class="etq-item"><span class="etq-num">2</span><span>Remove footwear — never stand with footwear near the Tulasi plant</span></li>
-      <li class="etq-item"><span class="etq-num">3</span><span>Offer a short prayer to Tulasi Mata before plucking — recite the mantra in Section 3 below</span></li>
-      <li class="etq-item" style="align-items:flex-start;border-bottom:1px solid var(--ivory-2)">
-        <span class="etq-num">4</span>
-        <div class="etq-hl">
-          <span class="tech-heading">Correct Plucking Technique</span>
-          <span class="tech-sub">Approach with complete devotion — never use fingernails</span>
+ 
+<div class="rule-card fade-up" style="margin-top:2px;overflow:hidden">
+  <div class="rule-stripe stripe-gold"></div>
+  <div class="rule-body">
+    <span class="rule-kicker">Sacred Conduct</span>
+    <div class="rule-title" style="margin-bottom:18px">While Plucking Tulasi</div>
+    <ul class="conduct-list">
+      <li class="conduct-item"><span class="conduct-num">1</span><span>Bathe or wash hands and body before approaching the Tulasi plant</span></li>
+      <li class="conduct-item"><span class="conduct-num">2</span><span>Remove footwear — never stand with footwear near the Tulasi plant</span></li>
+      <li class="conduct-item"><span class="conduct-num">3</span><span>Offer a short prayer to Tulasi Mata before plucking — recite the mantra in Section 3 below</span></li>
+      <li class="conduct-item" style="align-items:flex-start;border-bottom:1px solid var(--cream-2)">
+        <span class="conduct-num">4</span>
+        <div class="technique-box">
+          <span class="tech-title">Correct Plucking Technique</span>
+          <span class="tech-subtitle">Approach with complete devotion — never use fingernails</span>
           <div class="tech-hands">
-            <div class="tech-hand"><span class="tech-hand-lbl">Left Hand</span><p class="tech-hand-txt">Hold the stem or branch gently to support and steady the plant while plucking</p></div>
-            <div class="tech-hand"><span class="tech-hand-lbl">Right Hand</span><p class="tech-hand-txt">Use fingertips respectfully to detach the leaf with its petiole (small stem) intact</p></div>
+            <div class="tech-hand"><span class="tech-hand-label">Left Hand</span><p class="tech-hand-text">Hold the stem or branch gently to support and steady the plant while plucking</p></div>
+            <div class="tech-hand"><span class="tech-hand-label">Right Hand</span><p class="tech-hand-text">Use fingertips respectfully to detach the leaf with its petiole (small stem) intact</p></div>
           </div>
-          <div class="tulasi-img-row">
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAFTAdcDASIAAhEBAxEB/8QAHAAAAQUBAQEAAAAAAAAAAAAAAAECAwQFBgcI/8QAQhAAAQMCBAQEAwcCAwcEAwAAAQACAwQRBRIhMQYTQVEHImFxMoGRFCNCUqGxwWLRFUPhCBYkU3KC8TNjkvBFk6L/xAAbAQEAAgMBAQAAAAAAAAAAAAAAAgQBAwUGB//EADERAAICAgEDBAEDAgUFAAAAAAABAgMEETEFEiETIkFRBhQyYSNCFRZxkbEzUlOB8P/aAAwDAQACEQMRAD8A+y0IQgBCEIAQhCAEIQgBIhKgBCEIAuhJZJc3QDkICEAIQhACEIQAhCEABITqglACAUIQhAN2KduEJEAqEIQAhCEAIQhACEIQAg7ITd0AdU4bIshABUYBzKRBQAEJvVLfRAKhCEAIQhACEIQAhCEAhQEBBQCoQhAJdFkWRdAKhCEAXQkskuboByEXQgBCEhKAHGya0nqnAIsgFQhCAEIQgBFkIQCJUXTUA5CS6VACEKOR3ZAPc4AJjXknZMzHawv6qRrettUA/dCEIAQhCAEIQgEckvZOQRdAAKEhNkoN0AIQhACDshN3KAASTcfCnBG2iQuA3QCoWLiPE2C4fMIKzEaaGUi4Y6QXXP4r4l4BTkx0bnVsg6M0H1Kq25tFS3KSNUroR5Z3RICgnq6eFhfLK1rRuSV5DiniFjNU1zKZsVLGd8oJJ+a5Oqq6qeUy1FVNK5/xlzt1x8jr9UXqvyV7M2EePJ6/UeIeAx1AijM0zT+Njbhb+BYrTYtQR1lM9pa8Xy3uRrbVfOcrw0Erc8Kqyan48pQ133c4exzT1OUkfytGN12UrowkvDNdWX6ktM+gWlOTAU4OuvUnQQqEIQyCQkWQ91lDckoB+fW1iFINlEGnqFKNkAIQhACEIQAkclQgEQlQgI9c3opBsk0TNboB7jZACanBAKhCEAIQi6AEISFALdIXWWFxdxLQ8N0LamszOLzljjbu89gvJOKfE/EsWgdTUUX2GBwOe0mZ7hppfoubmdTpxvEn5NFl8a+T1nH+L8AwSkfUV+IQtDXBuRjg55JNgA0apOH+MuHscs2gxCN0hF+W+7XfQr5hrKvnyZicx3A7HuoTMY7OaXNeNQ5psQvPv8it7tdq0U/1z3wfYQcD1CdcWXyPUcUcQ1EkD5MZrSKebebTVXAWKVeL8PYliFLjFW81NO4Mpxme4uA7WJ6LyajxniBmHmpra2skp4gHSvEjgWD1NlDw7TY5jWKSUlK7mVEryJJHHRrepJUuV8S9y3CLbfR1b9RHH4Oz4N42xuvxqfB8SnkhaHlrZpGlrgQbDXa+q3P8A3BgXM5YqIW7+bKb/AJvRcbwzg7+GY6kVtSKx+U5SG2AJ67jqvXqbHocRonF9HBWQuFpI5omOB91c6jzp9pGDkKkX0fJfGvGuJYbjH2eiqMkSBp5hF3EjtqPQrX4W4sqKqP7NX1TmVLDo1ztHD5ry3jaKkxDiOQU0jXRsMYcWi4Ngr+B01TiGIMp3vLtfsyew7BXMXLF1tSWqNnCxoTjNbaZsYvxnWOr2wUlYGC4LrG41HRdHhfGWIQz5p3NqYnCz2uBBHovHKqRsTpWz1GYhxs3fSy9N8GYaLF6aaOq5jaGFmVzdM7u/6rZW5Ul4tGiDxeOK7LPYZ8bKxkiGVrB2C2sJ43rq2cGSqhgm7HKuL4w8Ma+VrGt5kzjlDbixWXj0uFMpJZwxmcbW3C4n/EIZqiWOaB0bi45XMPQ+hU3avw9Z8mGjRqJvA+MqirqX08oDZI/xWVrBvDnL8Qhox5LnDc6rNhxOoqaJzwXPHUHVXqHiGorZC2mw9sLWkXzSSXK5asxNk3MqB5o9bvAHy2RFXo3LY7KNJIzr5JWvHk5hLT8lBPiGJxUr5GxslDRdrPLr9VXnxWemdGx1OHMk1B5d1XxDGIJnvaIHxuccrw5zTe6n0MeC+DcwSvqahxkmdiDy75WHqs5Xb2VFsZCuqZqmpnkbN5bvABG11BPFIZBmzB3e6s4lw9TFzpI6mQNcbgWJC1oOHGSWLqhxc05g36qv1m/YjkyReH/D/8AKJMUxCqrRMH5vBDG2GxyAdRYXW0ygwrB5Kz7K2kpjJL96ZWt1cfU6LzSoxypd92y1rOzW6BO4XxSeqEUMLZHTOAawNFyT0CasdMv49eiSFrXR8iICxA8oPyW7g2GV8UkTqljw5rgWtzsIIuCL39V4dg1LiUWL0kpknHJmbl8uZv0K+v6GRs9FTSsOYPia4EHe4WvBe5aPAyi01oxcRt35OQ4jw2WkrJGiOcN0s3o4j+FmPwnFnnWHYfIL3Wu4cxaqw2rnhgkstXicHiIxPjbHKy17Sj4fRVqzC0nRmuqpGNaSLJqNjGXHRenJdS3OYr2QjzrOgEZu6VzjdNkrIY4m1LXOc8jTnOsDb3CnfTVbpwRUshYdmvkGnsFJRTMdG6NwaXjYOAupI26J9hq6OJlJHSHHKNpNvvVHVBqXl8csbNNmHzAfstepmlFJPE9pJeQLHcLPc8yztzEuBGpI7LXJt+T0JNR5PQ/C/iuOiYyipmSt5pJkf1b2C9SpwS3oBfYr5T8OcTfhGN0tXGXZWOs9vdp6r6Y4exenx3B6WvhuA9oBH5TuD6KL0u5XVG8daqSbR3cFuGiRAAuU9aFOBZSEkE7dFIWi4ICQ80K7YoB3VMRdCAtuhLZB2QBZCEIAQhCAEIQgBCEIAQhCAEIQgBCD0QgGmyQC6UqQpANQeiVKUAWQhCAEIQgBCEIAQhCAEJEIBUIQgBCEIAQhCAEIQgBIhCAaRYp42QhACEIQAhCEAIQhACEIQAhCEAIQhACEIQAhCEAIQhACEIQAhCEAIQhAf/2Q==" alt="Tulasi plant">
-            <div class="tulasi-img-caption"><strong>Tulasi — Ocimum tenuiflorum</strong>Pluck only fresh, whole leaves with the small stem attached. Do not offer fallen, broken, or wilted leaves to the deity.</div>
+          <div class="tulasi-callout">
+            <img src="data:image/png;base64,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" alt="Tulasi — Ocimum tenuiflorum">
+            <div class="tulasi-callout-text"><strong>Tulasi — Ocimum tenuiflorum</strong>Pluck only fresh, whole leaves with the small stem attached. Do not offer fallen, broken, or wilted leaves to the deity.</div>
           </div>
         </div>
       </li>
-      <li class="etq-item"><span class="etq-num">5</span><span>Pluck each leaf with its small stem (petiole) intact — never detach the leaf blade alone</span></li>
-      <li class="etq-item"><span class="etq-num">6</span><span>Do not offer fallen, broken, insect-damaged, or wilted leaves to the deity</span></li>
-      <li class="etq-item"><span class="etq-num">7</span><span>Approach with a calm, devoted mind — never hurriedly or mechanically</span></li>
+      <li class="conduct-item"><span class="conduct-num">5</span><span>Pluck each leaf with its small stem (petiole) intact — never detach the leaf blade alone</span></li>
+      <li class="conduct-item"><span class="conduct-num">6</span><span>Do not offer fallen, broken, insect-damaged, or wilted leaves to the deity</span></li>
+      <li class="conduct-item"><span class="conduct-num">7</span><span>Approach with a calm, devoted mind — never hurriedly or mechanically</span></li>
     </ul>
   </div>
 </div>
-
+ 
 <!-- ── SECTION 3: MANTRA ── -->
-<div class="section-head fade-up" id="mantra">
-  <span class="sec-kicker" id="lbl3">Step 3 — Recite Before Plucking</span>
-  <h2 class="sec-title" id="ttl3">Tulasi Plucking Mantra</h2>
-  <div class="sec-ornament"><span></span><em>✦</em><span></span></div>
+<div class="s-head fade-up" id="mantra">
+  <span class="s-kicker" id="lbl3">Step 3 — Recite Before Plucking</span>
+  <h2 class="s-title" id="ttl3">Tulasi Plucking Mantra</h2>
+  <div class="s-rule"><span></span><em>✦</em><span></span></div>
 </div>
-
 <div class="mantra-card fade-up">
-  <span class="mantra-kicker">Plucking Prayer · Recite before taking leaves from the plant</span>
-  <div class="mantra-sa" lang="sa">
+  <span class="mantra-eyebrow">Plucking Prayer · Recite before taking leaves from the plant</span>
+  <div class="mantra-devanagari" lang="sa">
     तुलस्यामृतजन्मासि सदा त्वं केशवप्रिया ।<br>
     केशवार्थे चिनोमि त्वां वरदा भव शोभने ॥
   </div>
@@ -423,293 +627,329 @@ footer a{color:var(--sage);text-decoration:none}
     <strong>Meaning —</strong> O Tulasi, you are born of nectar and are ever beloved of Lord Keshava (Vishnu). I pluck you only for the purpose of His worship. O auspicious one, be gracious and grant me your blessings.
   </div>
 </div>
-
+ 
 <!-- ── SECTION 4: EXCEPTION ── -->
-<div class="section-head fade-up" id="exception">
-  <span class="sec-kicker" id="lbl5">Important Override</span>
-  <h2 class="sec-title" id="ttl5">When Any Day Is Permitted</h2>
-  <div class="sec-ornament"><span></span><em>✦</em><span></span></div>
+<div class="s-head fade-up" id="exception">
+  <span class="s-kicker" id="lbl5">Important Override</span>
+  <h2 class="s-title" id="ttl5">When Any Day Is Permitted</h2>
+  <div class="s-rule"><span></span><em>✦</em><span></span></div>
 </div>
-
-<div class="exc-card fade-up">
-  <span class="exc-kicker">Sacred Exception</span>
-  <div class="exc-title">For Saligrama &amp; Vishnu Worship —<br>All Restrictions Are Lifted</div>
-  <div class="exc-list">
-    <div class="exc-item"><div class="exc-bullet"></div><span>Tulasi leaves <strong>may be plucked on any restricted day</strong> — including Ekadashi, Sunday, or during an eclipse — when required for <strong>Saligrama or Vishnu worship</strong>. The sanctity of that worship takes absolute precedence.</span></div>
-    <div class="exc-item"><div class="exc-bullet"></div><span>Leaves may be plucked on <strong>the permitted day before</strong> a restricted day and stored reverently. This is standard practice before Ekadashi.</span></div>
-    <div class="exc-item"><div class="exc-bullet"></div><span><strong>Previously plucked or dried Tulasi leaves</strong> are fully accepted and auspicious for Vishnu or Saligrama puja on any day, without restriction.</span></div>
+<div class="exception-card fade-up">
+  <span class="exception-eyebrow">Sacred Exception</span>
+  <div class="exception-title">For Saligrama &amp; Vishnu Worship —<br>All Restrictions Are Lifted</div>
+  <div class="exception-items">
+    <div class="exception-item"><div class="exception-dot"></div><span>Tulasi leaves <strong>may be plucked on any restricted day</strong> — including Ekadashi, Sunday, or during an eclipse — when required for <strong>Saligrama or Vishnu worship</strong>. The sanctity of that worship takes absolute precedence.</span></div>
+    <div class="exception-item"><div class="exception-dot"></div><span>Leaves may be plucked on <strong>the permitted day before</strong> a restricted day and stored reverently. This is standard practice before Ekadashi.</span></div>
+    <div class="exception-item"><div class="exception-dot"></div><span><strong>Previously plucked or dried Tulasi leaves</strong> are fully accepted and auspicious for Vishnu or Saligrama puja on any day, without restriction.</span></div>
   </div>
 </div>
-
-</div><!-- /container -->
-
+ 
+</div><!-- /page -->
+ 
 <footer>
-  <div class="f-ornament"><span></span><em>✦</em><span></span></div>
+  <div class="footer-ornament"><span></span><em>✦</em><span></span></div>
   <div>Tulasi is a sacred manifestation of the divine — approach always with purity, devotion, and reverence.</div>
-  <div style="margin-top:6px;opacity:.5">For authoritative guidance, consult a learned Madhwa Acharya or the Udupi Ashta Mathas.</div>
+  <div style="margin-top:6px;opacity:.6">For authoritative guidance, consult a learned Madhwa Acharya or the Udupi Ashta Mathas.</div>
 </footer>
-
+ 
 <script>
-// ══════ TRANSLATION ══════
-const TRANSLATE_IDS = ['lbl1','ttl1','lbl2','ttl2','lbl3','ttl3','lbl5','ttl5','todayH3','todayDesc','mantraRoman','mantraMeaning'];
-const originalTexts = {};
-let isTranslating = false;
-
-function cacheOriginals() {
-  TRANSLATE_IDS.forEach(function(id) {
-    var el = document.getElementById(id);
-    if (el) originalTexts[id] = el.innerText || el.textContent;
-  });
+// ══════════════════════════════════════════
+//  TRANSLATION
+// ══════════════════════════════════════════
+const TX_IDS = ['lbl1','ttl1','lbl2','ttl2','lbl3','ttl3','lbl5','ttl5','todayH3','todayDesc','mantraRoman','mantraMeaning'];
+const originals = {};
+let busy = false;
+function cacheOrig() {
+  TX_IDS.forEach(id => { const el = document.getElementById(id); if (el) originals[id] = el.innerText || el.textContent; });
 }
-
-function translatePage(targetLang) {
-  var status = document.getElementById('translateStatus');
-  if (!targetLang || targetLang === 'en') {
-    restoreOriginals();
-    document.getElementById('langSelect').value = '';
-    status.className = 'translate-status';
-    return;
+function translatePage(lang) {
+  const bar = document.getElementById('translateBar');
+  if (!lang || lang === 'en') {
+    TX_IDS.forEach(id => { const el = document.getElementById(id); if (el && originals[id]) el.textContent = originals[id]; });
+    document.getElementById('langSelect').value = ''; bar.className = 'translate-bar'; return;
   }
-  if (isTranslating) return;
-  isTranslating = true;
-  status.className = 'translate-status show';
-  status.innerHTML = '<span class="translate-spinner">⟳</span> Translating…';
-  var texts = [];
-  TRANSLATE_IDS.forEach(function(id) {
-    var el = document.getElementById(id);
-    if (el) texts.push((el.innerText || el.textContent).trim());
-  });
-  batchTranslate(texts, targetLang).then(function(translated) {
-    var idx = 0;
-    TRANSLATE_IDS.forEach(function(id) {
-      var el = document.getElementById(id);
-      if (!el) return;
-      if (translated[idx]) el.textContent = translated[idx];
-      idx++;
-    });
-    status.innerHTML = '✓ Translated';
-    setTimeout(function() { status.className = 'translate-status'; }, 3000);
-    isTranslating = false;
-  }).catch(function() {
-    status.innerHTML = '⚠ Translation unavailable';
-    setTimeout(function() { status.className = 'translate-status'; }, 4000);
-    isTranslating = false;
-  });
+  if (busy) return; busy = true;
+  bar.className = 'translate-bar show';
+  bar.innerHTML = '<span class="spin">⟳</span>&nbsp;Translating…';
+  const texts = TX_IDS.map(id => { const el = document.getElementById(id); return el ? (el.innerText||el.textContent).trim() : ''; });
+  Promise.all(texts.map(t => xlate(t, lang))).then(res => {
+    TX_IDS.forEach((id, i) => { const el = document.getElementById(id); if (el && res[i]) el.textContent = res[i]; });
+    bar.innerHTML = '✓ Translated'; setTimeout(() => { bar.className = 'translate-bar'; }, 3000); busy = false;
+  }).catch(() => { bar.innerHTML = '⚠ Translation unavailable'; setTimeout(() => { bar.className = 'translate-bar'; }, 4000); busy = false; });
 }
-
-function batchTranslate(texts, targetLang) {
-  var promises = texts.map(function(t) { return translateOne(t, targetLang); });
-  return Promise.all(promises);
-}
-
-function translateOne(text, targetLang) {
+function xlate(text, lang) {
   if (!text || text.length < 2) return Promise.resolve(text);
-  var url = 'https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text) + '&langpair=en|' + targetLang;
-  return fetch(url).then(function(r) { return r.json(); }).then(function(d) {
-    if (d.responseStatus === 200 && d.responseData && d.responseData.translatedText) return d.responseData.translatedText;
-    return text;
-  }).catch(function() { return text; });
+  return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text) + '&langpair=en|' + lang)
+    .then(r => r.json()).then(d => d.responseStatus===200 && d.responseData?.translatedText ? d.responseData.translatedText : text)
+    .catch(() => text);
 }
-
-function restoreOriginals() {
-  TRANSLATE_IDS.forEach(function(id) {
-    var el = document.getElementById(id);
-    if (el && originalTexts[id]) el.textContent = originalTexts[id];
-  });
+ 
+// ══════════════════════════════════════════
+//  LUNAR ENGINE
+// ══════════════════════════════════════════
+const KNOWN_NM = new Date(2025,0,29);
+const LM = 29.53059;
+function lunarAge(d) { return (((d - KNOWN_NM) / 86400000) % LM + LM) % LM; }
+ 
+const TITHI_S = ["Pratipada","Dwitiya","Tritiya","Chaturthi","Panchami","Shashthi","Saptami","Ashtami","Navami","Dashami","Ekadashi","Dwadashi","Trayodashi","Chaturdashi","Purnima"];
+const TITHI_K = ["Pratipada","Dwitiya","Tritiya","Chaturthi","Panchami","Shashthi","Saptami","Ashtami","Navami","Dashami","Ekadashi","Dwadashi","Trayodashi","Chaturdashi","Amavasya"];
+function getTithi(d) {
+  const age = lunarAge(d), n = Math.min(Math.floor(age / (LM/30)) + 1, 30);
+  return n <= 15 ? {paksha:"Shukla Paksha", name:TITHI_S[n-1], num:n}
+                 : {paksha:"Krishna Paksha", name:TITHI_K[n-16], num:n};
 }
-
-// ══════ LUNAR ENGINE ══════
-var KNOWN_NEW_MOON = new Date(2025, 0, 29);
-var LUNAR_MONTH = 29.53059;
-
-function getLunarAge(date) {
-  var diff = (date - KNOWN_NEW_MOON) / 86400000;
-  return ((diff % LUNAR_MONTH) + LUNAR_MONTH) % LUNAR_MONTH;
+ 
+// ── YOGA ──
+const YOGA_NAMES = ["Vishkambha","Priti","Ayushman","Saubhagya","Shobhana","Atiganda","Sukarma","Dhriti","Shula","Ganda","Vriddhi","Dhruva","Vyaghata","Harshana","Vajra","Siddhi","Vyatipata","Variyan","Parigha","Shiva","Siddha","Sadhya","Shubha","Shukla","Brahma","Indra","Vaidhriti"];
+const BAD_YOGA = ["Vyatipata","Vaidhriti"];
+function sunLon(d) {
+  const JD=d/86400000+2440587.5, n=JD-2451545, L=(280.46+0.9856474*n)%360, g=((357.528+0.9856003*n)%360)*Math.PI/180;
+  return (L+1.915*Math.sin(g)+0.02*Math.sin(2*g)+360)%360;
 }
-
-function getTithi(date) {
-  var age = getLunarAge(date);
-  var n = Math.min(Math.floor(age / (LUNAR_MONTH / 30)) + 1, 30);
-  var s = ["Pratipada","Dwitiya","Tritiya","Chaturthi","Panchami","Shashthi","Saptami","Ashtami","Navami","Dashami","Ekadashi","Dwadashi","Trayodashi","Chaturdashi","Purnima"];
-  var k = ["Pratipada","Dwitiya","Tritiya","Chaturthi","Panchami","Shashthi","Saptami","Ashtami","Navami","Dashami","Ekadashi","Dwadashi","Trayodashi","Chaturdashi","Amavasya"];
-  if (n <= 15) return {paksha:"Shukla Paksha", name:s[n-1]};
-  return {paksha:"Krishna Paksha", name:k[n-16]};
+function moonLon(d) { return (sunLon(d)+lunarAge(d)*(360/LM)+360)%360; }
+function getYoga(d) { const nm=YOGA_NAMES[Math.floor(((sunLon(d)+moonLon(d))%360)/(360/27))]; return {name:nm, inauspicious:BAD_YOGA.includes(nm)}; }
+ 
+// ── KARANA ──
+const KAR_NAMES = ["Bava","Balava","Kaulava","Taitila","Garaja","Vanija","Vishti","Shakuni","Chatushpada","Naga","Kimstughna"];
+function getKarana(d) { const nm=KAR_NAMES[Math.floor(lunarAge(d)/(LM/60))%11]; return {name:nm, inauspicious:nm==="Vishti"}; }
+ 
+// ── NAKSHATRA ──
+const NAKSHATRA_NAMES = ["Ashwini","Bharani","Krittika","Rohini","Mrigashira","Ardra","Punarvasu","Pushya","Ashlesha","Magha","Purva Phalguni","Uttara Phalguni","Hasta","Chitra","Swati","Vishakha","Anuradha","Jyeshtha","Mula","Purva Ashadha","Uttara Ashadha","Shravana","Dhanishtha","Shatabhisha","Purva Bhadrapada","Uttara Bhadrapada","Revati"];
+const NAKSHATRA_DEITY = ["Ashwini Kumaras","Yama","Agni","Brahma","Soma","Rudra","Aditi","Brihaspati","Nagas","Pitrs","Bhaga","Aryaman","Savitar","Vishwakarma","Vayu","Indra-Agni","Mitra","Indra","Nirriti","Apas","Vishwedevas","Vishnu","Ashta Vasus","Varuna","Aja Ekapada","Ahir Budhnya","Pushan"];
+function getNakshatra(d) {
+  const ml = moonLon(d);
+  const idx = Math.floor(ml / (360/27));
+  return { name: NAKSHATRA_NAMES[idx], deity: NAKSHATRA_DEITY[idx], pada: Math.floor((ml % (360/27)) / (360/108)) + 1 };
 }
-
-// ══════ YOGA CALCULATOR ══════
-var YOGA_NAMES = ["Vishkambha","Priti","Ayushman","Saubhagya","Shobhana","Atiganda","Sukarma","Dhriti","Shula","Ganda","Vriddhi","Dhruva","Vyaghata","Harshana","Vajra","Siddhi","Vyatipata","Variyan","Parigha","Shiva","Siddha","Sadhya","Shubha","Shukla","Brahma","Indra","Vaidhriti"];
-var INAUSPICIOUS_YOGAS = ["Vyatipata","Vaidhriti"];
-
-function getSunLongitude(date) {
-  var JD = date / 86400000 + 2440587.5;
-  var n = JD - 2451545.0;
-  var L = (280.46 + 0.9856474 * n) % 360;
-  var g = ((357.528 + 0.9856003 * n) % 360) * Math.PI / 180;
-  return (L + 1.915 * Math.sin(g) + 0.02 * Math.sin(2 * g) + 360) % 360;
+ 
+// ── VARA (WEEKDAY) DEITY ──
+const VARA_DEITY = ["Surya (Sun)","Chandra (Moon)","Mangala (Mars)","Budha (Mercury)","Guru (Jupiter)","Shukra (Venus)","Shani (Saturn)"];
+ 
+// ── LUNAR MASA ──
+const MASA_NAMES = ["Chaitra","Vaishakha","Jyeshtha","Ashadha","Shravana","Bhadrapada","Ashwina","Kartika","Margashira","Pushya","Magha","Phalguna"];
+function getMasa(d) {
+  const age = lunarAge(d);
+  // approximate: new moon index from known epoch
+  const nmCount = Math.floor((d - KNOWN_NM) / (LM * 86400000));
+  const masaIdx = ((nmCount % 12) + 12) % 12;
+  const paksha = age < LM/2 ? "Shukla" : "Krishna";
+  return { name: MASA_NAMES[masaIdx], paksha };
 }
-
-function getMoonLongitude(date) {
-  var age = getLunarAge(date);
-  var sunLon = getSunLongitude(date);
-  return (sunLon + age * (360 / LUNAR_MONTH) + 360) % 360;
+ 
+// ── SUNRISE / SUNSET (NOAA) ──
+function calcSun(lat, lon, date) {
+  const rad=Math.PI/180, JD=Math.floor(date/86400000)+2440587.5, JC=(JD-2451545)/36525;
+  const gml=(280.46646+JC*(36000.76983+JC*0.0003032))%360;
+  const gma=357.52911+JC*(35999.05029-0.0001537*JC);
+  const eeo=0.016708634-JC*(0.000042037+0.0000001267*JC);
+  const seoc=Math.sin(rad*gma)*(1.914602-JC*(0.004817+0.000014*JC))+Math.sin(rad*2*gma)*(0.019993-0.000101*JC)+Math.sin(rad*3*gma)*0.000289;
+  const stl=gml+seoc, sal=stl-0.00569-0.00478*Math.sin(rad*(125.04-1934.136*JC));
+  const mo=23+(26+(21.448-JC*(46.815+JC*(0.00059-JC*0.001813)))/60)/60;
+  const oc=mo+0.00256*Math.cos(rad*(125.04-1934.136*JC));
+  const sd=Math.asin(Math.sin(rad*oc)*Math.sin(rad*sal))/rad;
+  const y=Math.tan(rad*(oc/2))**2;
+  const eot=4/rad*(y*Math.sin(2*rad*gml)-2*eeo*Math.sin(rad*gma)+4*eeo*y*Math.sin(rad*gma)*Math.cos(2*rad*gml)-0.5*y*y*Math.sin(4*rad*gml)-1.25*eeo*eeo*Math.sin(2*rad*gma));
+  const ch=Math.cos(rad*90.833)/(Math.cos(rad*lat)*Math.cos(rad*sd))-Math.tan(rad*lat)*Math.tan(rad*sd);
+  if (ch<-1||ch>1) return null;
+  const ha=Math.acos(ch)/rad, noon=720-4*lon-eot;
+  const fmt=m=>{const tz=date.getTimezoneOffset(),local=((m-tz)%1440+1440)%1440,h=Math.floor(local/60),mm=Math.floor(local%60),ap=h>=12?"PM":"AM",h12=h%12||12;return h12+":"+(mm<10?"0":"")+mm+" "+ap;};
+  return {sunrise:fmt(noon-ha*4), sunset:fmt(noon+ha*4)};
 }
-
-function getYoga(date) {
-  var sunLon = getSunLongitude(date);
-  var moonLon = getMoonLongitude(date);
-  var sum = (sunLon + moonLon) % 360;
-  var idx = Math.floor(sum / (360 / 27));
-  var name = YOGA_NAMES[idx];
-  return { name: name, inauspicious: INAUSPICIOUS_YOGAS.indexOf(name) !== -1 };
+ 
+// ══════════════════════════════════════════
+//  MAIN PANCHANG RENDERER
+// ══════════════════════════════════════════
+let userLat = 17.385, userLon = 78.4867, userLocLabel = "Hyderabad";
+let currentDate = new Date();
+ 
+function setVal(id, val, cls) {
+  const el = document.getElementById(id); if (!el) return;
+  el.textContent = val;
+  el.className = 'p-cell-val' + (cls ? ' ' + cls : '');
 }
-
-// ══════ KARANA CALCULATOR ══════
-var KARANA_NAMES = ["Bava","Balava","Kaulava","Taitila","Garaja","Vanija","Vishti","Shakuni","Chatushpada","Naga","Kimstughna"];
-
-function getKarana(date) {
-  var age = getLunarAge(date);
-  var halfTithi = age / (LUNAR_MONTH / 60);
-  var idx = Math.floor(halfTithi) % 11;
-  var name = KARANA_NAMES[idx];
-  return { name: name, inauspicious: name === "Vishti" };
+function setSub(id, val, cls) {
+  const el = document.getElementById(id); if (!el) return;
+  el.textContent = val;
+  el.className = 'p-cell-sub' + (cls ? ' ' + cls : '');
 }
-
-// ══════ SUNRISE/SUNSET (NOAA algorithm) ══════
-function calcSunTimes(lat, lon, date) {
-  var rad = Math.PI / 180;
-  var JD = Math.floor(date / 86400000) + 2440587.5;
-  var JC = (JD - 2451545) / 36525;
-  var geomMeanLongSun = (280.46646 + JC * (36000.76983 + JC * 0.0003032)) % 360;
-  var geomMeanAnomSun = 357.52911 + JC * (35999.05029 - 0.0001537 * JC);
-  var eccEarthOrbit = 0.016708634 - JC * (0.000042037 + 0.0000001267 * JC);
-  var sunEqOfCtr = Math.sin(rad * geomMeanAnomSun) * (1.914602 - JC * (0.004817 + 0.000014 * JC))
-    + Math.sin(rad * 2 * geomMeanAnomSun) * (0.019993 - 0.000101 * JC)
-    + Math.sin(rad * 3 * geomMeanAnomSun) * 0.000289;
-  var sunTrueLon = geomMeanLongSun + sunEqOfCtr;
-  var sunAppLon = sunTrueLon - 0.00569 - 0.00478 * Math.sin(rad * (125.04 - 1934.136 * JC));
-  var meanObliq = 23 + (26 + (21.448 - JC * (46.8150 + JC * (0.00059 - JC * 0.001813))) / 60) / 60;
-  var obliqCorr = meanObliq + 0.00256 * Math.cos(rad * (125.04 - 1934.136 * JC));
-  var sunDeclin = Math.asin(Math.sin(rad * obliqCorr) * Math.sin(rad * sunAppLon)) / rad;
-  var y = Math.tan(rad * (obliqCorr / 2)) * Math.tan(rad * (obliqCorr / 2));
-  var eqOfTime = 4 / rad * (
-    y * Math.sin(2 * rad * geomMeanLongSun)
-    - 2 * eccEarthOrbit * Math.sin(rad * geomMeanAnomSun)
-    + 4 * eccEarthOrbit * y * Math.sin(rad * geomMeanAnomSun) * Math.cos(2 * rad * geomMeanLongSun)
-    - 0.5 * y * y * Math.sin(4 * rad * geomMeanLongSun)
-    - 1.25 * eccEarthOrbit * eccEarthOrbit * Math.sin(2 * rad * geomMeanAnomSun)
-  );
-  var cosHour = Math.cos(rad * 90.833) / (Math.cos(rad * lat) * Math.cos(rad * sunDeclin))
-    - Math.tan(rad * lat) * Math.tan(rad * sunDeclin);
-  if (cosHour < -1 || cosHour > 1) return null;
-  var haSunrise = Math.acos(cosHour) / rad;
-  var solarNoon = 720 - 4 * lon - eqOfTime;
-  var sunriseUTC = solarNoon - haSunrise * 4;
-  var sunsetUTC  = solarNoon + haSunrise * 4;
-
-  function minsToTime(mins) {
-    var tzOffset = date.getTimezoneOffset();
-    var local = ((mins - tzOffset) % 1440 + 1440) % 1440;
-    var h = Math.floor(local / 60);
-    var m = Math.floor(local % 60);
-    var ampm = h >= 12 ? "PM" : "AM";
-    var h12 = h % 12 || 12;
-    return h12 + ":" + (m < 10 ? "0" : "") + m + " " + ampm;
-  }
-  return { sunrise: minsToTime(sunriseUTC), sunset: minsToTime(sunsetUTC) };
-}
-
-// ══════ MAIN PANCHANG CHECK ══════
-function checkToday() {
-  var today = new Date();
-  var day   = today.getDay();
-  var tithi  = getTithi(today);
-  var yoga   = getYoga(today);
-  var karana = getKarana(today);
-  var days   = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-
-  var reasons = [];
-  if (day === 0) reasons.push("Sunday");
-  if (day === 2) reasons.push("Tuesday");
-  if (day === 5) reasons.push("Friday");
-  if (["Ekadashi","Dwadashi","Amavasya","Purnima"].indexOf(tithi.name) !== -1) reasons.push(tithi.name);
-  if (yoga.inauspicious)   reasons.push(yoga.name + " Yoga");
+ 
+function renderPanchang(date) {
+  const day = date.getDay();
+  const tithi = getTithi(date);
+  const yoga  = getYoga(date);
+  const karana = getKarana(date);
+  const nakshatra = getNakshatra(date);
+  const masa = getMasa(date);
+  const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+ 
+  // Reasons to restrict
+  const reasons = [];
+  if ([0,2,5].includes(day)) reasons.push(DAYS[day]);
+  if (["Ekadashi","Dwadashi","Amavasya","Purnima"].includes(tithi.name)) reasons.push(tithi.name);
+  if (yoga.inauspicious) reasons.push(yoga.name + " Yoga");
   if (karana.inauspicious) reasons.push("Vishti (Bhadra) Karana");
-
-  document.getElementById("p-weekday").textContent = days[day];
-  document.getElementById("p-date").textContent    = today.toLocaleDateString("en-IN", {day:"numeric",month:"short",year:"numeric"});
-  document.getElementById("p-tithi").textContent   = tithi.name;
-  document.getElementById("p-tithi-sub").textContent = tithi.paksha;
-  document.getElementById("p-paksha").textContent  = tithi.paksha.split(" ")[0];
-
-  var yogaEl = document.getElementById("p-yoga");
-  yogaEl.textContent = yoga.name;
-  yogaEl.style.color = yoga.inauspicious ? "#c07878" : "var(--ivory)";
-  var yogaSub = document.getElementById("p-yoga-sub");
-  yogaSub.textContent = yoga.inauspicious ? "⚠ Inauspicious" : "Auspicious";
-  yogaSub.style.color = yoga.inauspicious ? "#c07878" : "var(--sage)";
-
-  var karanaEl = document.getElementById("p-karana");
-  karanaEl.textContent = karana.name;
-  karanaEl.style.color = karana.inauspicious ? "#c07878" : "var(--ivory)";
-  var karanaSub = document.getElementById("p-karana-sub");
-  karanaSub.textContent = karana.inauspicious ? "⚠ Bhadra" : "Auspicious";
-  karanaSub.style.color = karana.inauspicious ? "#c07878" : "var(--sage)";
-
-  document.getElementById("p-window").textContent = reasons.length === 0 ? "Morning window open ✓" : "Restricted today";
-
-  var el = document.getElementById("todayResult");
+ 
+  // Weekday + deity
+  setVal("p-weekday", DAYS[day]);
+  document.getElementById("p-deity").textContent = "Deity: " + VARA_DEITY[day];
+ 
+  // Date
+  setVal("p-date", date.toLocaleDateString("en-IN", {day:"numeric", month:"short", year:"numeric"}));
+ 
+  // Tithi
+  const tithiBad = ["Ekadashi","Dwadashi","Amavasya","Purnima"].includes(tithi.name);
+  setVal("p-tithi", tithi.name, tithiBad ? "val-bad" : "");
+  setSub("p-tithi-sub", tithi.paksha);
+ 
+  // Paksha
+  setVal("p-paksha", tithi.paksha.split(" ")[0]);
+ 
+  // Yoga
+  setVal("p-yoga", yoga.name, yoga.inauspicious ? "val-bad" : "");
+  setSub("p-yoga-sub", yoga.inauspicious ? "⚠ Inauspicious — avoid" : "✓ Auspicious", yoga.inauspicious ? "sub-bad" : "sub-good");
+ 
+  // Karana
+  setVal("p-karana", karana.name, karana.inauspicious ? "val-bad" : "");
+  setSub("p-karana-sub", karana.inauspicious ? "⚠ Bhadra — avoid" : "✓ Auspicious", karana.inauspicious ? "sub-bad" : "sub-good");
+ 
+  // Nakshatra
+  setVal("p-nakshatra", nakshatra.name);
+  setSub("p-nakshatra-sub", "Pada " + nakshatra.pada + " · " + nakshatra.deity);
+ 
+  // Masa
+  setVal("p-masa", masa.name);
+  setSub("p-masa-sub", masa.paksha + " Paksha");
+ 
+  // Window placeholder (updated after sun calc)
+  document.getElementById("p-window").textContent = reasons.length === 0 ? "Morning window open ✓" : "Restricted — see below";
+ 
+  // Result box
+  const el = document.getElementById("todayResult");
+  const isToday = isSameDay(date, new Date());
+  const dayLabel = isToday ? "Today" : date.toLocaleDateString("en-IN", {weekday:"long", day:"numeric", month:"short"});
+ 
   if (reasons.length === 0) {
-    el.className = "result-safe";
-    el.innerHTML = '<div class="result-big">✅ Auspicious Today</div><div class="result-detail">Today (' + days[day] + ', ' + tithi.name + ', ' + yoga.name + ' Yoga) has no restrictions.<br><br><strong style="color:var(--sage-light)">Pluck in the early morning after bathing. Recite the mantra before plucking.</strong><br><br><span style="font-size:11px;opacity:0.5">Also verify Sankranti and eclipse in your local Panchang.</span></div>';
+    el.className = "result-box safe";
+    el.innerHTML = `<div class="result-headline">✓ Auspicious</div>
+      <div class="result-body">${dayLabel} (${DAYS[day]}, ${tithi.name}, ${yoga.name} Yoga) has no restrictions.<br><br>
+      <strong>Pluck in the early morning after bathing. Recite the mantra before plucking.</strong><br><br>
+      <span style="font-size:11.5px;color:var(--ink-5)">Also verify Sankranti and eclipse in your local Panchang.</span></div>`;
   } else {
-    var tags = reasons.map(function(r) { return '<span class="rtag">✕ ' + r + '</span>'; }).join('');
-    el.className = "result-unsafe";
-    el.innerHTML = '<div class="result-big">🚫 Restricted Today</div><div class="result-detail">Tulasi should <strong>not</strong> be plucked today due to:<br><div style="margin:8px 0">' + tags + '</div><strong style="color:#e07070">Collect from yesterday or use previously stored leaves.</strong><br><br><span style="font-size:11px;opacity:0.5">Exception: Always permitted for Saligrama or Vishnu puja.</span></div>';
+    const tags = reasons.map(r => `<span class="rtag">✕ ${r}</span>`).join('');
+    el.className = "result-box restrict";
+    el.innerHTML = `<div class="result-headline">✗ Restricted</div>
+      <div class="result-body">Tulasi should <strong>not</strong> be plucked on ${dayLabel} due to:<div style="margin:8px 0">${tags}</div>
+      <strong>Collect from a permitted day or use previously stored leaves.</strong><br><br>
+      <span style="font-size:11.5px;color:var(--ink-5)">Exception: Always permitted for Saligrama or Vishnu puja.</span></div>`;
   }
-
-  // Sunrise / Sunset — pure JS, no API
-  function applySun(lat, lon, label) {
-    var sun = calcSunTimes(lat, lon, today);
-    if (sun) {
-      document.getElementById("p-sunrise").textContent = sun.sunrise;
-      document.getElementById("p-sunset").textContent  = sun.sunset;
-      document.getElementById("p-sunrise-sub").textContent = label;
-      document.getElementById("p-sunset-sub").textContent  = label;
-      if (reasons.length === 0) {
-        document.getElementById("p-window").textContent = "After " + sun.sunrise + " ✓";
-      }
-    }
+ 
+  // ── Dashami callout (Enhancement 5) ──
+  const dcEl = document.getElementById("dashamiCallout");
+  if (tithi.name === "Dashami") {
+    dcEl.style.display = "block";
+    dcEl.innerHTML = `<div class="dashami-callout">
+      <span class="dashami-icon">🌿</span>
+      <div><strong>Dashami — Collect Extra Leaves Today</strong><br>
+      Tomorrow is Ekadashi, when plucking is restricted. Collect and store sufficient Tulasi leaves today for tomorrow's worship.</div>
+    </div>`;
+  } else { dcEl.style.display = "none"; }
+ 
+  // ── Nav date badge (Enhancement 6) ──
+  updateNavBadge(date);
+ 
+  // ── Sunrise / Sunset ──
+  applySun(userLat, userLon, userLocLabel, date, reasons);
+}
+ 
+function applySun(lat, lon, label, date, reasons) {
+  const sun = calcSun(lat, lon, date);
+  if (sun) {
+    document.getElementById("p-sunrise").textContent = sun.sunrise;
+    document.getElementById("p-sunset").textContent  = sun.sunset;
+    document.getElementById("p-sunrise-sub").textContent = label;
+    document.getElementById("p-sunset-sub").textContent  = label;
+    if (reasons.length === 0)
+      document.getElementById("p-window").textContent = "After " + sun.sunrise + " ✓";
+    else
+      document.getElementById("p-window").textContent = "Restricted — plucking not advised";
   }
-
+}
+ 
+// ── Nav badge helper ──
+function updateNavBadge(date) {
+  const badge = document.getElementById("navDateBadge");
+  if (!badge) return;
+  const isToday = isSameDay(date, new Date());
+  badge.textContent = isToday ? "Today" : date.toLocaleDateString("en-IN", {day:"numeric", month:"short", year:"numeric"});
+}
+ 
+function isSameDay(a, b) {
+  return a.getFullYear()===b.getFullYear() && a.getMonth()===b.getMonth() && a.getDate()===b.getDate();
+}
+ 
+// ── Date picker handler ──
+function onDateChange(val) {
+  if (!val) return;
+  // Parse as local date (avoid UTC shift)
+  const parts = val.split('-');
+  const d = new Date(+parts[0], +parts[1]-1, +parts[2]);
+  currentDate = d;
+  renderPanchang(d);
+}
+ 
+function resetToToday() {
+  currentDate = new Date();
+  const inp = document.getElementById("datePickerInput");
+  const y = currentDate.getFullYear();
+  const m = String(currentDate.getMonth()+1).padStart(2,'0');
+  const day = String(currentDate.getDate()).padStart(2,'0');
+  inp.value = `${y}-${m}-${day}`;
+  renderPanchang(currentDate);
+}
+ 
+// ── Scroll badge logic (Enhancement 6) ──
+function initScrollBadge() {
+  const hero = document.querySelector('.hero');
+  const badge = document.getElementById("navDateBadge");
+  if (!hero || !badge) return;
+  const obs = new IntersectionObserver(entries => {
+    badge.classList.toggle("show", !entries[0].isIntersecting);
+  }, {threshold: 0.1});
+  obs.observe(hero);
+}
+ 
+// ── Scroll fade ──
+function initFade() {
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach((e,i) => { if (e.isIntersecting) { setTimeout(()=>e.target.classList.add("in"), i*60); obs.unobserve(e.target); } });
+  }, {threshold:.06});
+  document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+}
+ 
+// ── INIT ──
+document.addEventListener("DOMContentLoaded", () => {
+  cacheOrig();
+  // Set date picker to today
+  const today = new Date();
+  const inp = document.getElementById("datePickerInput");
+  const y = today.getFullYear(), m = String(today.getMonth()+1).padStart(2,'0'), day = String(today.getDate()).padStart(2,'0');
+  inp.value = `${y}-${m}-${day}`;
+  inp.max = `${y+2}-12-31`;
+  inp.min = `${y-3}-01-01`;
+ 
+  // Geolocation then render
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
-      function(pos) { applySun(pos.coords.latitude, pos.coords.longitude, "Your location"); },
-      function()    { applySun(17.3850, 78.4867, "Hyderabad"); }
+      p => { userLat=p.coords.latitude; userLon=p.coords.longitude; userLocLabel="Your location"; renderPanchang(today); },
+      () => renderPanchang(today)
     );
-  } else {
-    applySun(17.3850, 78.4867, "Hyderabad");
-  }
-}
-
-// ══════ SCROLL FADE ══════
-function initFadeUp() {
-  var obs = new IntersectionObserver(function(entries) {
-    entries.forEach(function(e, i) {
-      if (e.isIntersecting) {
-        setTimeout(function() { e.target.classList.add("visible"); }, i * 70);
-        obs.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.06 });
-  document.querySelectorAll('.fade-up').forEach(function(el) { obs.observe(el); });
-}
-
-// ══════ INIT ══════
-document.addEventListener("DOMContentLoaded", function() {
-  cacheOriginals();
-  checkToday();
-  initFadeUp();
+  } else { renderPanchang(today); }
+ 
+  initScrollBadge();
+  initFade();
 });
 </script>
 </body>
 </html>
+
+
